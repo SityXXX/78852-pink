@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <header class="page-header">
+        <div class="nav-bar">
+            <div class="nav-bar__site-name"><a class="nav-bar__link" href="/">Pink</a></div>
+            <div class="nav-bar__nav"></div>
+        </div>
+        <div class="slogan">Конкурс на самое безбашеное путешествие с Пинк</div>
+    </header>
+    <div class="form">
+        <div class="form__intro">
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+        </div>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <fieldset class="form-fieldset">
+                <div class="input-group">
+                    <label class="input-group__label" for="name">Имя: *</label>
+                    <input class="input-group__input" id="name" type="text" name="name" placeholder="Введите ваше имя" required>
+                </div>
+                <div class="input-group">
+                    <label class="input-group__label" for="lastname">Фамилия: *</label>
+                    <input class="input-group__input" id="lastname" type="text" name="name" placeholder="Укажите фамиию" required>
+                </div>
+                <div class="input-group">
+                    <label class="input-group__label">Отчество: *</label>
+                    <input class="input-group__input" type="text" name="name" placeholder="Ну и отчество тоже" required>
+                </div>
+            </fieldset>
+            <fieldset class="form-fieldset">
+                <legend class="form-legend">
+                    С каким приложением путешествовали? *
+                </legend>
+                <div class="input-group">
+                    <label class="input-group__label"><input type="radio" name="app" checked>Pink для iOS:</label>
+                    <label class="input-group__label"><input type="radio" name="app">Pink на Android:</label>
+                    <label class="input-group__label"><input type="radio" name="app">Windows Phone:</label>
+                </div>
+            </fieldset>
+            <fieldset class="form-fieldset">
+                <legend class="form-legend">
+                    Когда вы путешествовали? *
+                </legend>
+                <div class="input-group">
+                    <input class="input-group__input" type="text" name="start-date" placeholder="1 апреля 2015">
+                    <label class="input-group__label input-group__label--under-input">Дата виезда:</label>
+                </div>
+				<div class="input-group">
+					<span class="input-group__add-on">-</span>
+					<input class="input-group__input" type="text" name="days" placeholder="10 дней">
+					<span class="input-group__add-on">+</span>
+					<label class="input-group__label input-group__label--under-input">Продолжительность:</label>
+				</div>
+				<div class="input-group">
+					<input class="input-group__input" type="text" name="checkout-date" placeholder="1 апреля 2015">
+					<label class="input-group__label input-group__label--under-input">Дата возврощения:</label>
+				</div>
+            </fieldset>
+			<fieldset class="form-fieldset">
+				<legend class="form-legend">Количество попутчиков *</legend>
+				<div class="input-group">
+					<span class="input-group__add-on">-</span>
+					<input class="input-group__input" type="text" name="people" placeholder="2 чел" required>
+					<span class="input-group__add-on">+</span>
+				</div>
+				<div class="input-group input-group__narrow">
+					<span class="input-group__label-add-on">№</span>
+					<label for="pilyhrym1" class="input-group__label">Имя: *</label>
+					<span class="input-group__add-on">1</span>
+					<input class="input-group__input" id="pilyhrym1" name="name1" placeholder="Введите ваше имя" required>
+				</div>
+				<div class="input-group">
+					<label for="sobriquet" class="input-group__label">Прозвище:</label>
+					<input class="input-group__input input-group__input--narrow" id="sobriquet" name="sobriquet" placeholder="Ну как же без этого!" required>
+				</div>
+				<div class="input-group input-group__narrow">
+					<span class="input-group__label-add-on">№</span>
+					<label for="pilyhrym2" class="input-group__label">Имя: *</label>
+					<span class="input-group__add-on">2</span>
+					<input class="input-group__input" id="pilyhrym2" name="name2" placeholder="Введите ваше имя" required>
+				</div>
+				<div class="input-group">
+					<label for="sobriquet2" class="input-group__label">Прозвище:</label>
+					<input class="input-group__input input-group__input--narrow" id="sobriquet2" name="sobriquet2" placeholder="Ну как же без этого!" required>
+				</div>
+			</fieldset>
+			<fieldset class="form-fieldset">
+				<legend class="form-legend">Ваши безбашенные достижения в путешествии</legend>
+				<div class="input-group">
+					<label class="input-group__label">
+						<input type="checkbox" class="input-group__input" name="selfy" value="Зделать селфи с Акулой">Зделать селфи с Акулой
+					</label>
+				</div>
+				<div class="input-group">
+					<label class="input-group__label">
+						<input type="checkbox" class="input-group__input" name="burned" value="Обгорел на пляже">Обгорел на пляже
+					</label>
+				</div>
+				<div class="input-group">
+					<label class="input-group__label">
+						<input type="checkbox" class="input-group__input" name="sow-chuck" value="Видел Чака Норриса">Видел Чака Норриса
+					</label>
+				</div>
+				<div class="input-group">
+					<label class="input-group__label">
+						<input type="checkbox" class="input-group__input" name="buy-souvenirs" value="Накупил сувениры">Накупил сувениры
+					</label>
+				</div>
+				<div class="input-group">
+					<label class="input-group__label">
+						<input type="checkbox" class="input-group__input" name="hold-tower" value="Удержал башню">Удержал башню
+					</label>
+				</div>
+				<div class="input-group">
+					<label class="input-group__label">
+						<input type="checkbox" class="input-group__input" name="crushed-hotel" value="Разгромил отель">Разгромил отель
+					</label>
+				</div>
+			</fieldset>
+			<fieldset class="form-fieldset">
+				<legend class="form-legend">ВАШИ ФОТОГРАФИИ из поездки *</legend>
+				<div class="input-group">
+					<input type="file" name="photos" multiple>
+				</div>
+				<div class="photo">
+					<div class="photo__item">
+						<a href="#" class="photo__delete"></a>
+						<img class="photo__img" src="img/img-1.jpg" alt="New York">
+						<span class="photo__name">img-1.jpg</span>
+					</div>
+					<div class="photo__item">
+						<a href="#" class="photo__delete"></a>
+						<img class="photo__img" src="img/img-2.jpg" alt="Los Angeles">
+						<span class="photo__name">img-2.jpg</span>
+					</div>
+					<div class="photo__item">
+						<a href="#" class="photo__delete"></a>
+						<img class="photo__img" src="img/img-3.jpg" alt="Chicago">
+						<span class="photo__name">img-3.jpg</span>
+					</div>
+					<div class="photo__item">
+						<a href="#" class="photo__delete"></a>
+						<img class="photo__img" src="img/img-4.jpg" alt="London">
+						<span class="photo__name">img-4.jpg</span>
+					</div>
+					<div class="photo__item">
+						<a href="#" class="photo__delete"></a>
+						<img class="photo__img" src="img/img-5.jpg" alt="Paris">
+						<span class="photo__name">img-5.jpg</span>
+					</div>
+					<div class="photo__item">
+						<a href="#" class="photo__delete"></a>
+						<img class="photo__img" src="img/img-6.jpg" alt="Helsinki">
+						<span class="photo__name">img-6.jpg</span>
+					</div>
+					<div class="photo__item">
+						<a href="#" class="photo__delete"></a>
+						<img class="photo__img" src="img/img-7.jpg" alt="Budapest">
+						<span class="photo__name">img-7.jpg</span>
+					</div>
+				</div>
+			</fieldset>
+			<fieldset class="form-fieldset">
+				<div class="form-group">
+					<input type="submit" name="submit" value="Отправить форму">
+				</div>
+				<span class="form-fieldser__required">
+					<span class="form-fieldset__notice">*</span> — обязательные поля
+				</span>
+			</fieldset>
+        </form>
+    </div>
+	<div class="pink-logo"></div>
+	<ul class="social">
+		<li class="social__item"><a href="#" class="social__link"></a></li>
+		<li class="social__item"><a href="#" class="social__link"></a></li>
+		<li class="social__item"><a href="#" class="social__link"></a></li>
+	</ul>
+	<div class="made-by">Разработано</div>
+</body>
+</html>
