@@ -1,0 +1,17 @@
+.nav-bar {
+  padding-top: 22px;
+  padding-right: 20px;
+  padding-bottom: 21px;
+  padding-left: 20px;
+  background-color: rgba(0,0,0,0.3);
+  border-bottom: 1px solid transparent;
+  &--opened {
+    background-color: $brand-color;
+    border-bottom: 1px solid #030303;
+  }
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}

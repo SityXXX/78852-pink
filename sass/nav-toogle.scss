@@ -1,0 +1,13 @@
+.nav-toogle {
+  display: block;
+  background: url("../img/burger.svg") 100% 0 no-repeat;
+  text-indent: -9999px;
+  width: 50px;
+  height: 24px;
+  float: right;
+  &--opened {
+    background-image: url("../img/close-btn.png");
+    width: 23px;
+    height: 22px;
+  }
+}

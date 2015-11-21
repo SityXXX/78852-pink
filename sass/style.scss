@@ -1,0 +1,21 @@
+//vars and mixins
+@import "variables.scss";
+@import "mixins.scss";
+
+//general
+@import "scaffolding.scss";
+
+//blocks
+@import "page-header.scss";
+@import "nav-bar.scss";
+@import "site-name.scss";
+@import "main-menu.scss";
+@import "slogan.scss";
+@import "nav-toogle.scss";
+@import "application.scss";
+@import "platforms.scss";
+@import "ios.scss";
+@import "android.scss";
+@import "windows.scss";
+@import "available-on.scss";
+@import "info.scss";

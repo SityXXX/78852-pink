@@ -1,0 +1,23 @@
+.application {
+  padding-top: 28px;
+  padding-right: 21px;
+  padding-bottom: 30px;
+  padding-left: 19px;
+  background-color: #1d2631;
+  &__download-btn {
+    display: block;
+    border: 3px solid $white;
+    color: $white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-bottom: 16px;
+    padding-left: 10px;
+    margin-bottom: 31px;
+    @include border-raduis(52px);
+  }
+}

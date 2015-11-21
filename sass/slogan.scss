@@ -1,0 +1,14 @@
+.slogan {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: $white;
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-top: 17px;
+  &--with-phone {
+    padding-bottom: 314px ;
+    background: url('../img/iphone.png') 50% 100% no-repeat;
+  }
+}
