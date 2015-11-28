@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Пинк</title>
 </head>
@@ -32,25 +32,23 @@
     </ul>
     <div class="available-on">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
   </div>
-  <div class="info">
-    <div class="info__convince">
-      <p class="info__convince-item">Устали от серости мегаполиса?</p>
-      <p class="info__convince-item">Нам есть, что вампредложить!</p>
-    </div>
-    <div class="info__advantages">
-      <section class="info__advantages-item">
-        <h1 class="info__advantages-header">Поднимает настроение</h1>
-        <p class="info__advantages-text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
-      </section>
-      <section class="info__advantages-item">
-        <h1 class="info__advantages-header">Меняет мир вокруг</h1>
-        <p class="info__advantages-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-      </section>
-      <section class="info__advantages-item">
-        <h1 class="info__advantages-header">Заводит новых друзей</h1>
-        <p class="info__advantages-text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-      </section>
-    </div>
+  <div class="promo">
+    <p class="promo__item">Устали от серости мегаполиса?</p>
+    <p class="promo__item">Нам есть, что вампредложить!</p>
+  </div>
+  <div class="advantages">
+    <section class="advantages__item">
+      <h1 class="advantages__heading">Поднимает настроение</h1>
+      <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+    </section>
+    <section class="advantages__item">
+      <h1 class="advantages__heading">Меняет мир вокруг</h1>
+      <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+    </section>
+    <section class="advantages__item">
+      <h1 class="advantages__heading">Заводит новых друзей</h1>
+      <p class="advantages__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+    </section>
   </div>
   <div class="review">
     <ul class="review__list">
@@ -70,26 +68,60 @@
     </ul>
   </div>
   <div class="price">
-    <ul class="price__list">
-      <li class="price__item">
-        <div class="price__header">Сандарт<span class="price__usd">1,99 usd</span></div>
-        <div class="price__pref price__pref--checked">Розовый фильр</div>
-        <div class="price__pref">Смайлики</div>
-        <div class="price__pref">Коментарии</div>
-      </li>
-      <li class="prices__item">
-        <div class="price__header price__header--labeled">База<span class="price__usd">3,99 usd</span></div>
-        <div class="price__pref price__pref--checked">Розовый фильр</div>
-        <div class="price__pref price__pref--checked">Смайлики</div>
-        <div class="price__pref">Коментарии</div>
-      </li>
-      <li class="prices__item">
-        <div class="price__header">Анлим<span class="price__usd">9,99 usd</span></div>
-        <div class="price__pref price__pref--checked">Розовый фильр</div>
-        <div class="price__pref price__pref--checked">Смайлики</div>
-        <div class="price__pref price__pref--checked">Коментарии</div>
-      </li>
-    </ul>
+    <table class="price__table">
+      <thead class="price__table-head">
+        <tr class="price__table-head-row">
+          <td class="price__table-head-col">База<span class="price__table-head-col-usd">1,99 usd</span></td>
+        </tr>
+      </thead>
+      <tbody class="price__table-body">
+        <tr class="price__table-body-row">
+          <td class="price__table-body-col price__table-body-col--checked">Розовый фильр</td>
+        </tr>
+        <tr class="price__table-body-row">
+          <td class="price__table-body-col">Смайлики</td>
+        </tr>
+        <tr class="price__table-body-row">
+          <td class="price__table-body-col">Коментарии</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="price__table">
+      <thead class="price__table-head">
+      <tr class="price__table-head-row">
+        <td class="price__table-head-col price__table-head-col--hit">Стандарт<span class="price__table-head-col-usd">3,99 usd</span></td>
+      </tr>
+      </thead>
+      <tbody class="price__table-body">
+      <tr class="price__table-body-row">
+        <td class="price__table-body-col price__table-body-col--checked">Розовый фильр</td>
+      </tr>
+      <tr class="price__table-body-row">
+        <td class="price__table-body-col price__table-body-col--checked">Смайлики</td>
+      </tr>
+      <tr class="price__table-body-row">
+        <td class="price__table-body-col">Коментарии</td>
+      </tr>
+      </tbody>
+    </table>
+    <table class="price__table">
+      <thead class="price__table-head">
+      <tr class="price__table-head-row">
+        <td class="price__table-head-col">Анлим<span class="price__table-head-col-usd">9,99 usd</span></td>
+      </tr>
+      </thead>
+      <tbody class="price__table-body">
+      <tr class="price__table-body-row">
+        <td class="price__table-body-col price__table-body-col--checked">Розовый фильр</td>
+      </tr>
+      <tr class="price__table-body-row">
+        <td class="price__table-body-col price__table-body-col--checked">Смайлики</td>
+      </tr>
+      <tr class="price__table-body-row">
+        <td class="price__table-body-col price__table-body-col--checked">Коментарии</td>
+      </tr>
+      </tbody>
+    </table>
     <ul class="price__navigation">
       <li class="price__nav-item"><a href="#" class="price__nav-link"></a></li>
       <li class="price__nav-item"><a href="#" class="price__nav-link price__nav-link--active"></a></li>

@@ -5,13 +5,16 @@
   padding-left: 20px;
   background-color: rgba(0,0,0,0.3);
   border-bottom: 1px solid transparent;
+
   &--opened {
     background-color: $brand-color;
     border-bottom: 1px solid #030303;
   }
+
   &::after {
     content: '';
     display: table;
     clear: both;
   }
+
 }
