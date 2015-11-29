@@ -2,16 +2,32 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Пинк</title>
 </head>
 <body>
+
+
+<!-- Page header -->
 <header class="page-header">
+
+  <!-- nav-bar -->
   <div class="nav-bar" id="nav-bar">
+
+    <!-- sitename -->
     <a class="site-name" href="/">Pink</a>
+    <!-- sitename -->
+
+    <!-- open menu btn -->
     <a href="#" class="nav-toogle" id="nav-toogle">Открыть</a>
+    <!-- open menu btn -->
+
   </div>
+  <!-- nav-bar -->
+
+  <!-- menu -->
   <nav class="main-menu" id="main-menu">
     <ul class="main-menu__list">
       <li class="main-menu__item"><a href="#" class="main-menu__link">Информация</a></li>
@@ -20,58 +36,99 @@
       <li class="main-menu__item"><a href="#" class="main-menu__link">Конкурс</a></li>
     </ul>
   </nav>
-  <div class="slogan slogan--with-phone">Взгляните на жизнь иначе!</div>
+  <!-- menu -->
+
+  <!-- site heading -->
+  <div class="heading-wrap heading-wrap--imaged">
+    <div class="h1 h1--light">Взгляните на жизнь иначе!</div>
+  </div>
+  <!-- site heading -->
+
 </header>
-<main class="main-content">
+<!-- Page header -->
+
+<!-- Main content -->
+<main>
+
+  <!-- application -->
   <div class="application">
-    <a href="#" class="application__download-btn">Скачать приложение</a>
-    <ul class="platforms">
-      <li class="ios">ios</li>
-      <li class="android">android</li>
-      <li class="windows">windows</li>
-    </ul>
-    <div class="available-on">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
+
+    <!-- download button -->
+    <a href="#" class="btn btn--primary btn--download">Скачать приложение</a>
+    <!-- download button -->
+
+    <!-- platforms -->
+    <div class="platforms">
+      <div class="platforms__item"><a href="#"><img src="img/apple.svg" alt="iOS"></a></div>
+      <div class="platforms__item"><a href="#"><img src="img/android.svg" alt="Android"></a></div>
+      <div class="platforms__item"><a href="#"><img src="img/windows.svg" alt="Windows Phone"></a></div>
+    </div>
+    <!-- platforms -->
+
+    <div class="application__available-on">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
+
   </div>
-  <div class="promo">
-    <p class="promo__item">Устали от серости мегаполиса?</p>
-    <p class="promo__item">Нам есть, что вам предложить!</p>
+  <!-- application -->
+
+  <!-- promo -->
+  <div class="promo-wrap">
+    <div class="h1">Устали от серости мегаполиса?</div>
+    <div class="h1">Нам есть, что вам предложить!</div>
   </div>
+  <!-- promo -->
+
+  <!-- advantages -->
   <div class="advantages">
     <section class="advantages__item">
-      <h1 class="advantages__heading">Поднимает настроение</h1>
+      <h2 class="advantages__heading">Поднимает настроение</h2>
       <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
     </section>
     <section class="advantages__item">
-      <h1 class="advantages__heading">Меняет мир вокруг</h1>
+      <h2 class="advantages__heading">Меняет мир вокруг</h2>
       <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
     </section>
     <section class="advantages__item">
-      <h1 class="advantages__heading">Заводит новых друзей</h1>
+      <h2 class="advantages__heading">Заводит новых друзей</h2>
       <p class="advantages__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
     </section>
   </div>
-  <div class="review">
-    <ul class="review__list">
-      <li class="review__item">
-        <p class="review__author">Николай Петров</p>
+  <!-- advantages -->
+
+  <!-- review wrapper-->
+  <div class="review-wrap">
+
+    <!-- review -->
+    <div class="review">
+      <div class="review__item">
+        <div class="review__author">Николай Петров</div>
         <p class="review__text">
           «Это приложение перевернуло мой мир и позволило по-новому взглянуть на
           привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
           фотографии!»
         </p>
-      </li>
+      </div>
+    </div>
+    <!-- review -->
+
+    <!-- slider navigation -->
+    <ul class="slider-navigation">
+      <li class="slider-navigation__item"><a href="#" class="slider-navigation__link slider-navigation__link--active"></a></li>
+      <li class="slider-navigation__item"><a href="#" class="slider-navigation__link"></a></li>
+      <li class="slider-navigation__item"><a href="#" class="slider-navigation__link"></a></li>
     </ul>
-    <ul class="review__navigation">
-      <li class="review__nav-item"><a href="#" class="review__nav-link review__nav-link--active"></a></li>
-      <li class="review__nav-item"><a href="#" class="review__nav-link"></a></li>
-      <li class="review__nav-item"><a href="#" class="review__nav-link"></a></li>
-    </ul>
+    <!-- slider navigation -->
+
   </div>
+  <!-- review wrapper-->
+
+  <!-- price tables -->
   <div class="price">
+
+    <!-- table-1 -->
     <table class="price__table">
       <thead class="price__table-head">
         <tr class="price__table-head-row">
-          <td class="price__table-head-col">База<span class="price__table-head-col-usd">1,99 usd</span></td>
+          <td class="price__table-head-col">База<div class="price__table-head-col-usd">1,99 usd</div></td>
         </tr>
       </thead>
       <tbody class="price__table-body">
@@ -86,10 +143,13 @@
         </tr>
       </tbody>
     </table>
+    <!-- table-1 -->
+
+    <!-- table-2 -->
     <table class="price__table">
       <thead class="price__table-head">
       <tr class="price__table-head-row">
-        <td class="price__table-head-col price__table-head-col--hit">Стандарт<span class="price__table-head-col-usd">3,99 usd</span></td>
+        <td class="price__table-head-col price__table-head-col--hit">Стандарт<div class="price__table-head-col-usd">3,99 usd</div></td>
       </tr>
       </thead>
       <tbody class="price__table-body">
@@ -104,10 +164,13 @@
       </tr>
       </tbody>
     </table>
+    <!-- table-2 -->
+
+    <!-- table-3 -->
     <table class="price__table">
       <thead class="price__table-head">
       <tr class="price__table-head-row">
-        <td class="price__table-head-col">Анлим<span class="price__table-head-col-usd">9,99 usd</span></td>
+        <td class="price__table-head-col">Анлим<div class="price__table-head-col-usd">9,99 usd</div></td>
       </tr>
       </thead>
       <tbody class="price__table-body">
@@ -122,30 +185,44 @@
       </tr>
       </tbody>
     </table>
-    <ul class="price__navigation">
-      <li class="price__nav-item"><a href="#" class="price__nav-link"></a></li>
-      <li class="price__nav-item"><a href="#" class="price__nav-link price__nav-link--active"></a></li>
-      <li class="price__nav-item"><a href="#" class="price__nav-link"></a></li>
+    <!-- table-1 -->
+
+    <!-- slider navigation -->
+    <ul class="slider-navigation">
+      <li class="slider-navigation__item"><a href="#" class="slider-navigation__link slider-navigation__link--active"></a></li>
+      <li class="slider-navigation__item"><a href="#" class="slider-navigation__link"></a></li>
+      <li class="slider-navigation__item"><a href="#" class="slider-navigation__link"></a></li>
     </ul>
+    <!-- slider navigation -->
+
   </div>
+  <!-- price tables -->
+
 </main>
+<!-- Main content -->
+
+<!-- Page footer -->
 <footer class="page-footer">
-  <section class="contact">
-    <h1 class="contact__block-header">Остались вопросы? Свяжитесь с нами</h1>
-    <div class="contact__item">
-      <div class="contact__heading">Звоните:</div>
-      <p class="contact__text">+7 (812) 555-66-66</p>
+  <div class="contacts">
+    <div class="h1">Остались вопросы? Свяжитесь с нами</div>
+    <div class="contacts__item">
+      <div class="contacts__heading">Звоните:</div>
+      <p class="contacts__text">+7 (812) 555-66-66</p>
     </div>
-    <div class="contact__item">
-      <div class="contact__heading">Пишите:</div>
-      <p class="contact__text">mail@htmlacademy.ru</p>
+    <div class="contacts__item">
+      <div class="contacts__heading">Пишите:</div>
+      <p class="contacts__text">mail@htmlacademy.ru</p>
     </div>
-    <div class="contact__item">
-      <div class="contact__heading">Приезжайте в гости:</div>
-      <p class="contact__text">ул. Большая Конюшенная, 19/8</p>
+    <div class="contacts__item">
+      <div class="contacts__heading">Приезжайте в гости:</div>
+      <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
     </div>
-  </section>
-  <div class="map"></div>
+  </div>
+  <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.32089471628772!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca77c663%3A0xe2913435672b14c9!2s21+Shop!5e0!3m2!1suk!2sua!4v1448799721054" width="100%" height="220" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
 </footer>
+<!-- Page footer -->
+
 </body>
 </html>

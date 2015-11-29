@@ -1,0 +1,89 @@
+.price {
+
+  position: relative;
+  padding-right: 20px;
+  padding-bottom: 99px;
+  padding-left: 20px;
+  background-color: $gray-bg-color;
+
+  &__table {
+
+    width: 100%;
+    border-right: 2px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;
+    border-left: 2px solid #e5e5e5;
+    border-collapse: collapse;
+    background-color: #ffffff;
+
+  }
+
+  &__table-head {
+
+    background-color: $brand-color;
+    color: #ffffff;
+
+  }
+
+  &__table-head-col {
+    padding-top: 22px;
+    padding-right: 22px;
+    padding-bottom: 22px;
+    padding-left: 22px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    &--hit::after {
+      content: 'хит';
+      display: block;
+      width: 102px;
+      background-color: #d22856;
+      position: absolute;
+      left: -24px;
+      top: 11px;
+      transform: rotate(-45deg);
+      text-transform: uppercase;
+      line-height: 30px;
+      font-weight: 600;
+    }
+
+  }
+
+  &__table-head-col-usd {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+    margin-top: 6px;
+  }
+
+
+
+  &__tabel-body {
+
+    background-color: #fff;
+
+  }
+
+  &__table-body-col {
+
+    position: relative;
+    line-height: 30px;
+    text-transform: uppercase;
+    border: 2px solid #e5e5e5;
+    padding-top: 15px;
+    padding-right: 55px;
+    padding-bottom: 15px;
+    padding-left: 22px;
+    text-align: left;
+
+    &:first-child {
+      border-top: none;
+    }
+
+  }
+
+}

@@ -1,0 +1,16 @@
+.application {
+
+  padding-top: 28px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  background-color: #1d2631;
+
+  &__available-on {
+    text-align: center;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 300;
+  }
+
+}

@@ -1,15 +1,26 @@
 *,
 *::before,
 *::after {
+
   box-sizing: border-box;
+
 }
 
 html, body {
+
   padding: 0;
   margin: 0;
+
 }
 
 body {
+
   font: normal 14px/27px 'Open Sans', 'Arial', sans-serif;
   color: $brand-color;
+  min-width: 320px;
+
+}
+
+fieldset {
+  border: none;
 }

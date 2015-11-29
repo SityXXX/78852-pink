@@ -1,24 +1,26 @@
 //vars and mixins
-@import "variables.scss";
-@import "mixins.scss";
+@import "vars/variables";
+@import "mixins/mixins";
 
 //general
-@import "scaffolding.scss";
+@import "base/scaffolding";
+@import "base/typo";
 
 //blocks
-@import "page-header.scss";
-@import "nav-bar.scss";
-@import "site-name.scss";
-@import "main-menu.scss";
-@import "slogan.scss";
-@import "nav-toogle.scss";
-@import "application.scss";
-@import "platforms.scss";
-@import "ios.scss";
-@import "android.scss";
-@import "windows.scss";
-@import "available-on.scss";
-@import "promo.scss";
-@import "advantages.scss";
-@import "review.scss";
-@import "price.scss";
+@import "blocks/page-header";
+@import "blocks/nav-bar";
+@import "blocks/site-name";
+@import "blocks/main-menu";
+@import "blocks/nav-toogle";
+@import "blocks/application";
+@import "blocks/platforms";
+@import "blocks/promo-wrap";
+@import "blocks/advantages";
+@import "blocks/review-wrap";
+@import "blocks/review";
+@import "blocks/price";
+@import "blocks/btn";
+@import "blocks/slider-navigation";
+@import "blocks/contatcs";
+@import "blocks/heading-wrap";
+@import "blocks/form";
