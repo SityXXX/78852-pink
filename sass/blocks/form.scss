@@ -8,7 +8,17 @@
 
   }
 
-  &__fieldset {
+  &__legend {
+
+    text-align: center;
+    color: $crimson-color;
+    text-transform: uppercase;
+    line-height: 18px;
+    margin-bottom: 37px;
+
+  }
+
+  &__fieldset-wrap {
 
     background-color: #ffffff;
     padding-top: 38px;
@@ -24,5 +34,7 @@
     }
 
   }
+
+
 
 }

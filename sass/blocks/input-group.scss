@@ -1,0 +1,40 @@
+.input-group {
+
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__label {
+
+    display: block;
+    padding-left: 23px;
+    margin-bottom: 7px;
+    color: $crimson-color;
+    text-transform: uppercase;
+
+    &--under-input {
+
+      margin-top: 10px;
+      margin-bottom: 0;
+      text-align: center;
+      padding-left: 0;
+
+    }
+
+  }
+
+  &__radio {
+
+    display: none;
+
+  }
+
+  &__radio-label {
+
+    padding-left: 60px;
+
+  }
+
+}
