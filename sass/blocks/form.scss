@@ -35,6 +35,18 @@
 
   }
 
+  &__required {
 
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 30px;
+
+  }
+
+  &__notice {
+
+    color: $crimson-color;
+
+  }
 
 }
