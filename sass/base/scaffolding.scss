@@ -62,3 +62,26 @@ legend {
   text-align: center;
 
 }
+
+input[type='checkbox'],
+input[type='radio'] {
+  display: none;
+}
+
+input[type='radio'] ~ label:before {
+  position: absolute;
+  content: ' ';
+  display: block;
+  width: 39px;
+  height: 39px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  left: 0;
+  top: 50%;
+  margin-top: -20px;
+  @include border-raduis(50%);
+}
+
+input[type='radio'] ~ label:after {
+
+}
