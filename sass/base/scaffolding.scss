@@ -28,29 +28,6 @@ fieldset {
 
 }
 
-input[type='text'],
-input[type='password'] {
-
-  padding-top: 15px;
-  padding-right: 22px;
-  padding-bottom: 14px;
-  padding-left: 22px;
-  margin: 0;
-  font-size: 18px;
-  line-height: 30px;
-  border: 2px solid #e5e5e5;
-  width: 100%;
-  @include border-raduis(2px);
-
-  &:disabled {
-
-    background-color: $gray-bg-color;
-    cursor: not-allowed;
-
-  }
-
-}
-
 label {
 
   line-height: 30px;
