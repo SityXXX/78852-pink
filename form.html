@@ -56,21 +56,26 @@
     <!-- main fieldset -->
     <div class="form__fieldset-wrap">
       <fieldset class="form__fieldset">
+
         <div class="form__fieldset-intro">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
         </div>
-        <div class="form-group">
-          <label class="form-group__label" for="name">Имя: *</label>
-          <input class="form-group__input" id="name" type="text" name="name" placeholder="Введите ваше имя" required>
+
+        <div class="form__group">
+          <label class="form__label" for="name">Имя: *</label>
+          <input class="form__input" id="name" type="text" name="name" placeholder="Введите ваше имя" required>
         </div>
-        <div class="form-group">
-          <label class="form-group__label" for="lastname">Фамилия: *</label>
-          <input class="form-group__input" id="lastname" type="text" name="name" placeholder="Укажите фамиию" required>
+
+        <div class="form__group">
+          <label class="form__label" for="lastname">Фамилия: *</label>
+          <input class="form__input" id="lastname" type="text" name="name" placeholder="Укажите фамиию" required>
         </div>
-        <div class="form-group">
-          <label class="form-group__label">Отчество: *</label>
-          <input class="form-group__input" type="text" name="name" placeholder="Ну и отчество тоже" required>
+
+        <div class="form__group">
+          <label class="form__label">Отчество: *</label>
+          <input class="form__input" type="text" name="name" placeholder="Ну и отчество тоже" required>
         </div>
+
       </fieldset>
     </div>
     <!-- main fieldset -->
@@ -78,18 +83,21 @@
     <!-- fieldset applictaion -->
     <div class="form__fieldset-wrap">
       <fieldset class="form__fieldset">
-        <legend class="form__legend">
-          С каким приложением путешествовали? *
-        </legend>
-        <div class="form-group">
-          <input class="form-group__radio" type="radio" name="app" id="pink_ios" checked><label class="form-group__radio-label" for="pink_ios">Pink для iOS:</label>
-        </div>
-        <div class="form-group">
-          <input class="form-group__radio" type="radio" name="app" id="pink_android"><label class="form-group__radio-label" for="pink_android">Pink на Android:</label>
-        </div>
-        <div class="form-group">
-          <input class="form-group__radio" type="radio" name="app" id="pink_windows"><label class="form-group__radio-label" for="pink_windows">Windows Phone:</label>
-        </div>
+
+        <legend class="form__legend">С каким приложением путешествовали? *</legend>
+
+          <div class="form__group form__group--lg-distance">
+            <input class="form__radio" type="radio" name="app" id="pink_ios" checked><label class="form__radio-label" for="pink_ios">Pink для iOS:</label>
+          </div>
+
+          <div class="form__group form__group--lg-distance">
+            <input class="form__radio" type="radio" name="app" id="pink_android"><label class="form__radio-label" for="pink_android">Pink на Android:</label>
+          </div>
+
+          <div class="form__group form__group--lg-distance">
+            <input class="form__radio" type="radio" name="app" id="pink_windows"><label class="form__radio-label" for="pink_windows">Windows Phone:</label>
+          </div>
+
       </fieldset>
     </div>
     <!-- fieldset applictaion -->
@@ -97,21 +105,24 @@
     <!-- fieldset when -->
     <div class="form__fieldset-wrap">
       <fieldset class="form__fieldset">
-        <legend class="form__legend">
-          Когда вы путешествовали? *
-        </legend>
-        <div class="form-group">
-          <input class="form-group__input" type="text" name="start-date" placeholder="1 апреля 2015">
-          <label class="form-group__label form-group__label--under-input">Дата виезда:</label>
-        </div>
-        <div class="form-group">
-          <input class="form-group__input" type="text" name="days" placeholder="10 дней">
-          <label class="form-group__label form-group__label--under-input">Продолжительность:</label>
-        </div>
-        <div class="form-group">
-          <input class="form-group__input" type="text" name="checkout-date" placeholder="1 апреля 2015" disabled>
-          <label class="form-group__label form-group__label--under-input">Дата возврощения:</label>
-        </div>
+
+        <legend class="form__legend">Когда вы путешествовали? *</legend>
+
+          <div class="form__group">
+            <input class="form__input" type="text" name="start-date" placeholder="1 апреля 2015">
+            <label class="form__label form__label--under-input">Дата виезда:</label>
+          </div>
+
+          <div class="form__group">
+            <input class="form__input" type="text" name="days" placeholder="10 дней">
+            <label class="form__label form__label--under-input">Продолжительность:</label>
+          </div>
+
+          <div class="form__group">
+            <input class="form__input" type="text" name="checkout-date" placeholder="1 апреля 2015" disabled>
+            <label class="form__label form__label--under-input">Дата возврощения:</label>
+          </div>
+
       </fieldset>
     </div>
     <!-- fieldset when -->
@@ -119,34 +130,47 @@
     <!-- fieldset number of travelers -->
     <div class="form__fieldset-wrap">
       <fieldset class="form__fieldset">
+
         <legend class="form__legend">Количество попутчиков *</legend>
-        <div class="form-group">
-          <input class="form-group__input" type="text" name="people" placeholder="2 чел" required>
-        </div>
-        <div class="form-group">
-          <span class="form-group__label-add-on">№</span>
-          <label for="pilyhrym" class="form-group__label">Имя: *</label>
-          <span class="form-group__add-on">1</span>
-          <input class="form-group__input" type="text" id="pilyhrym" name="name1" placeholder="Введите ваше имя" required>
-        </div>
-        <div class="form-group form-group--narrow">
-          <label for="sobriquet" class="form-group__label">Прозвище:</label>
-          <input class="form-group__input" type="text" id="sobriquet" name="sobriquet" placeholder="Ну как же без этого!" required>
-        </div>
-        <div class="form-group">
-          <div class="input-group">
-            <span class="form-group__label-add-on">№</span>
-            <label for="pilyhrym_2" class="form-group__label">Имя: *</label>
+
+          <div class="form__group">
+            <input class="form__input" type="text" name="people" required>
           </div>
-          <div class="input-group">
-            <span class="form-group__add-on">2</span>
+
+          <div class="form__group">
+
+            <div class="form__input-group">
+              <span class="form__add-on">№</span>
+              <label for="pilyhrym" class="form__label">Имя: *</label>
+            </div>
+
+            <div class="form__input-group">
+              <span class="form__add-on form__add-on--bordered">1</span>
+              <input class="form__input" type="text" id="pilyhrym" name="name1" placeholder="Введите ваше имя" required>
+            </div>
+
           </div>
-          <input class="form-group__input" type="text" id="pilyhrym_2" name="pilyhrym_2" placeholder="Введите ваше имя" required>
-        </div>
-        <div class="form-group form-group--narrow">
-          <label for="sobriquet_2" class="form-group__label">Прозвище:</label>
-          <input class="form-group__input" type="text" id="sobriquet_2" name="sobriquet_2" placeholder="Ну как же без этого!" required>
-        </div>
+
+          <div class="form form__group">
+            <label for="sobriquet" class="form__label">Прозвище:</label>
+            <input class="form__input" type="text" id="sobriquet" name="sobriquet" placeholder="Ну как же без этого!" required>
+          </div>
+
+          <div class="form__group">
+            <span class="form__label-add-on">№</span>
+            <label for="pilyhrym_2" class="form__label">Имя: *</label>
+          </div>
+
+          <div class="form__group">
+            <span class="form__add-on">2</span>
+            <input class="form__input" type="text" id="pilyhrym_2" name="pilyhrym_2" placeholder="Введите ваше имя" required>
+          </div>
+
+          <div class="form__group">
+            <label for="sobriquet_2" class="form__label">Прозвище:</label>
+            <input class="form__input" type="text" id="sobriquet_2" name="sobriquet_2" placeholder="Ну как же без этого!" required>
+          </div>
+
       </fieldset>
     </div>
     <!-- fieldset number of travelers -->
@@ -154,31 +178,39 @@
     <!-- feldset achievements -->
     <div class="form__fieldset-wrap">
       <fieldset class="form__fieldset">
+
         <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
-        <div class="form-group">
-          <input type="checkbox" class="form-group__checkbox" id="selfy" name="selfy" value="Зделать селфи с Акулой">
-          <label class="form-group__checkbox-label" for="selfy">Зделать селфи с Акулой</label>
-        </div>
-        <div class="form-group">
-          <input type="checkbox" class="form-group__checkbox" id="burned" name="burned" value="Обгорел на пляже">
-          <label class="form-group__checkbox-label" for="burned">Обгорел на пляже</label>
-        </div>
-        <div class="form-group">
-          <input type="checkbox" class="form-group__checkbox" id="sow-chuck" name="sow-chuck" value="Видел Чака Норриса">
-          <label class="form-group__checkbox-label" for="sow-chuck">Видел Чака Норриса</label>
-        </div>
-        <div class="form-group">
-          <input type="checkbox" class="form-group__checkbox" id="buy-souvenirs" name="buy-souvenirs" value="Накупил сувениры">
-          <label class="form-group__checkbox-label" for="buy-souvenirs">Накупил сувениры</label>
-        </div>
-        <div class="form-group">
-          <input type="checkbox" class="form-group__checkbox" id="hold-tower" name="hold-tower" value="Удержал башню">
-          <label class="form-group__checkbox-label" for="hold-tower">Удержал башню</label>
-        </div>
-        <div class="form-group">
-          <input type="checkbox" class="form-group__checkbox" id="crushed-hotel" name="crushed-hotel" value="Разгромил отель">
-          <label class="form-group__checkbox-label" for="crushed-hotel">Разгромил отель</label>
-        </div>
+
+          <div class="form__group form__group--lg-distance">
+            <input type="checkbox" class="form__checkbox" id="selfy" name="selfy" value="Зделать селфи с Акулой">
+            <label class="form__checkbox-label" for="selfy">Зделать селфи с Акулой</label>
+          </div>
+
+          <div class="form__group form__group--lg-distance">
+            <input type="checkbox" class="form__checkbox" id="burned" name="burned" value="Обгорел на пляже">
+            <label class="form__checkbox-label" for="burned">Обгорел на пляже</label>
+          </div>
+
+          <div class="form__group form__group--lg-distance">
+            <input type="checkbox" class="form__checkbox" id="sow-chuck" name="sow-chuck" value="Видел Чака Норриса">
+            <label class="form__checkbox-label" for="sow-chuck">Видел Чака Норриса</label>
+          </div>
+
+          <div class="form__group form__group--lg-distance">
+            <input type="checkbox" class="form__checkbox" id="buy-souvenirs" name="buy-souvenirs" value="Накупил сувениры">
+            <label class="form__checkbox-label" for="buy-souvenirs">Накупил сувениры</label>
+          </div>
+
+          <div class="form__group form__group--lg-distance">
+            <input type="checkbox" class="form__checkbox" id="hold-tower" name="hold-tower" value="Удержал башню">
+            <label class="form__checkbox-label" for="hold-tower">Удержал башню</label>
+          </div>
+
+          <div class="form__group form__group--lg-distance">
+            <input type="checkbox" class="form__checkbox" id="crushed-hotel" name="crushed-hotel" value="Разгромил отель">
+            <label class="form__checkbox-label" for="crushed-hotel">Разгромил отель</label>
+          </div>
+
       </fieldset>
     </div>
     <!-- feldset achievements -->
@@ -186,46 +218,57 @@
     <!-- fieldset photos -->
     <div class="form__fieldset-wrap">
       <fieldset class="form-fieldset">
+
         <legend class="form__legend">ВАШИ ФОТОГРАФИИ из поездки *</legend>
-        <div class="form-group">
-          <input class="form-group__file" type="file" name="photos" multiple>
+
+        <div class="form__group">
+          <input class="form__file" type="file" name="photos" multiple>
         </div>
+
         <div class="photos">
+
           <div class="photos__item">
             <a href="#" class="photos__delete"></a>
             <img class="photos__img" src="img/img-1.jpg" alt="New York">
             <div class="photos__name">img-1.jpg</div>
           </div>
+
           <div class="photos__item">
             <a href="#" class="photos__delete"></a>
             <img class="photos__img" src="img/img-2.jpg" alt="Los Angeles">
             <div class="photos__name">img-2.jpg</div>
           </div>
+
           <div class="photos__item">
             <a href="#" class="photos__delete"></a>
             <img class="photos__img" src="img/img-3.jpg" alt="Chicago">
             <div class="photos__name">img-3.jpg</div>
           </div>
+
           <div class="photos__item">
             <a href="#" class="photos__delete"></a>
             <img class="photos__img" src="img/img-4.jpg" alt="London">
             <div class="photos__name">img-4.jpg</div>
           </div>
+
           <div class="photos__item">
             <a href="#" class="photos__delete"></a>
             <img class="photos__img" src="img/img-5.jpg" alt="Paris">
             <div class="photos__name">img-5.jpg</div>
           </div>
+
           <div class="photos__item">
             <a href="#" class="photos__delete"></a>
             <img class="photos__img" src="img/img-6.jpg" alt="Helsinki">
             <div class="photos__name">img-6.jpg</div>
           </div>
+
           <div class="photos__item">
             <a href="#" class="photo__delete"></a>
             <img class="photos__img" src="img/img-7.jpg" alt="Budapest">
             <div class="photos__name">img-7.jpg</div>
           </div>
+
         </div>
       </fieldset>
     </div>
@@ -234,12 +277,13 @@
     <!-- fieldset submit -->
     <div class="form__fieldset-wrap">
       <fieldset class="form__fieldset">
-        <div class="form-group">
-          <input class="form-group__submit" type="submit" name="submit" value="Отправить форму">
-        </div>
+
+        <input class="form__submit" type="submit" name="submit" value="Отправить форму">
+
         <div class="form__required">
           <span class="form__notice">*</span> — обязательные поля
         </div>
+
       </fieldset>
     </div>
     <!-- fieldset submit -->
