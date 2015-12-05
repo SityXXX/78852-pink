@@ -137,6 +137,8 @@
             <input class="form__input" type="text" name="people" required>
           </div>
 
+          <div class="form__delimetr"></div>
+
           <div class="form__group">
 
             <div class="form__input-group">
@@ -145,28 +147,32 @@
             </div>
 
             <div class="form__input-group">
-              <span class="form__add-on form__add-on--bordered">1</span>
+              <span class="form__add-on form__add-on--for-input">1</span>
               <input class="form__input" type="text" id="pilyhrym" name="name1" placeholder="Введите ваше имя" required>
             </div>
 
           </div>
 
-          <div class="form form__group">
+          <div class="form__group form__group--narrow">
             <label for="sobriquet" class="form__label">Прозвище:</label>
             <input class="form__input" type="text" id="sobriquet" name="sobriquet" placeholder="Ну как же без этого!" required>
           </div>
 
           <div class="form__group">
-            <span class="form__label-add-on">№</span>
-            <label for="pilyhrym_2" class="form__label">Имя: *</label>
+
+            <div class="form__input-group">
+              <span class="form__add-on">№</span>
+              <label for="pilyhrym_2" class="form__label">Имя: *</label>
+            </div>
+
+            <div class="form__input-group">
+              <span class="form__add-on form__add-on--for-input">2</span>
+              <input class="form__input" type="text" id="pilyhrym_2" name="pilyhrym_2" placeholder="Введите ваше имя" required>
+            </div>
+
           </div>
 
-          <div class="form__group">
-            <span class="form__add-on">2</span>
-            <input class="form__input" type="text" id="pilyhrym_2" name="pilyhrym_2" placeholder="Введите ваше имя" required>
-          </div>
-
-          <div class="form__group">
+          <div class="form__group form__group--narrow">
             <label for="sobriquet_2" class="form__label">Прозвище:</label>
             <input class="form__input" type="text" id="sobriquet_2" name="sobriquet_2" placeholder="Ну как же без этого!" required>
           </div>
@@ -224,6 +230,8 @@
         <div class="form__group">
           <input class="form__file" type="file" name="photos" multiple>
         </div>
+
+        <div class="form__delimetr"></div>
 
         <div class="photos">
 

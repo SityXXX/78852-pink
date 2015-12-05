@@ -39,6 +39,12 @@
 
     margin-bottom: 16px;
 
+    &--narrow {
+
+      padding-left: 59px;
+
+    }
+
     &--lg-distance {
 
       margin-bottom: 43px;
@@ -56,6 +62,7 @@
   &__input-group {
 
     display: table;
+    width: 100%;
 
     & > * {
 
@@ -67,16 +74,18 @@
 
   &__add-on {
 
-    min-width: 59px;
+    width: 59px;
     padding-left: 5px;
     padding-right: 5px;
     background-color: $gray-bg-color;
     text-align: center;
+    color: $crimson-color;
 
-    &--bordered {
+    &--for-input {
 
       border: 2px solid #e5e5e5;
       border-right: none;
+      color: $brand-color;
 
     }
 
@@ -87,6 +96,15 @@
     text-align: center;
     text-transform: uppercase;
     line-height: 30px;
+
+  }
+
+  &__delimetr {
+
+    height: 2px;
+    background-color: #e5e5e5;
+    margin-top: 48px;
+    margin-bottom: 31px;
 
   }
 
