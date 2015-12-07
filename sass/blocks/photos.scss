@@ -5,7 +5,35 @@
 
   &__item {
 
+    position: relative;
+    margin-right: 39px;
 
+    &:nth-child(3n) {
+
+      margin-right: 0;
+      align-self: flex-end;
+
+    }
+
+  }
+
+  &__delete {
+
+    position: absolute;
+    right: -16px;
+    top: -16px;
+    width: 33px;
+    height: 33px;
+    border: 2px solid #e5e5e5;
+    background: url('../img/cross-delete.png') #ffffff 50% 50% no-repeat;
+    border-radius: 50%;
+
+  }
+
+  &__name {
+
+    text-transform: uppercase;
+    font-size: 12px;
 
   }
 

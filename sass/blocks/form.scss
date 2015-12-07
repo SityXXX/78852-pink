@@ -149,32 +149,6 @@
 
   }
 
-  &__submit {
-
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffffff;
-    border: none;
-    padding-top: 17px;
-    padding-right: 5px;
-    padding-bottom: 16px;
-    padding-left: 5px;
-    background-color: #2aab6d;
-    width: 100%;
-    margin-bottom: 37px;
-    @include border-radius(2px);
-
-  }
-
-  &__upload {
-
-
-
-  }
-
   &__radio,
   &__checkbox {
 
