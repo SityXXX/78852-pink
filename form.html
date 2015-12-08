@@ -226,12 +226,11 @@
       <fieldset class="form-fieldset">
 
         <legend class="form__legend">ВАШИ ФОТОГРАФИИ из поездки *</legend>
-        <div class="form__upload"></div>
+
         <div class="form__group">
-          <input class="form__file" type="file" name="photos" multiple>
+          <input class="form__file" style="display: none" type="file" name="photos" multiple>
           <a href="#" class="btn btn--upload">Загрузить фото</a>
         </div>
-
 
         <div class="form__delimetr"></div>
 
@@ -326,7 +325,9 @@
   <!-- social links -->
 
   <!-- powered by -->
-  <div class="page-footer__made-by">Разработано</div>
+  <div class="page-footer__made-by-wrap">
+    <a href="#" class="page-footer__made-by-link">Разработано</a>
+  </div>
   <!-- powered by -->
 
 </footer>

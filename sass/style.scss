@@ -1,6 +1,6 @@
 //vars and mixins
 @import "vars/variables";
-@import "mixins/mixins";
+//@import "mixins/mixins";
 
 //general
 @import "base/scaffolding";
@@ -26,4 +26,4 @@
 @import "blocks/form";
 @import "blocks/photos";
 @import "blocks/social";
-
+@import "blocks/page-footer";

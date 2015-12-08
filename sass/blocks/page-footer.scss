@@ -1,0 +1,20 @@
+.page-footer {
+
+  padding-bottom: 56px;
+
+  &__made-by-wrap {
+
+    text-align: center;
+
+  }
+
+  &__made-by-link {
+
+    font-size: 18px;
+    line-height: 1;
+    color: $brand-color;
+    text-decoration: none;
+
+  }
+
+}
