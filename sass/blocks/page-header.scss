@@ -1,10 +1,21 @@
 .page-header {
 
-  background: url('../img/header-bg-xs.jpg');
+  background-image: url('../img/background-mobile@1x.jpg');
   background-color: #2c3b4b;
   background-repeat: no-repeat;
-  background-position: 50%, bottom;
-  background-size: cover;
+  background-position: 50% 0;
   position: relative;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+    background-image: url('../img/background-mobile@2x.jpg');
+
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 288dpi) {
+
+    background-image: url('../img/background-mobile@3x.jpg');
+
+  }
 
 }
