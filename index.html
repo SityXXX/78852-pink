@@ -59,9 +59,9 @@
 
     <!-- platforms -->
     <div class="platforms">
-      <div class="platforms__item"><a href="#"><img src="img/apple.svg" alt="iOS"></a></div>
-      <div class="platforms__item"><a href="#"><img src="img/android.svg" alt="Android"></a></div>
-      <div class="platforms__item"><a href="#"><img src="img/windows.svg" alt="Windows Phone"></a></div>
+      <div class="platforms__item"><a href="#"><img src="img/apple-logo.svg" alt="iOS"></a></div>
+      <div class="platforms__item"><a href="#"><img src="img/android-logo.svg" alt="Android"></a></div>
+      <div class="platforms__item"><a href="#"><img src="img/microsoft-logo.svg" alt="Windows Phone"></a></div>
     </div>
     <!-- platforms -->
 
@@ -79,26 +79,28 @@
 
   <!-- advantages -->
   <div class="advantages">
-    <section class="advantages__item">
-      <h2 class="advantages__heading">Поднимает настроение</h2>
-      <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
-    </section>
-    <section class="advantages__item">
-      <h2 class="advantages__heading">Меняет мир вокруг</h2>
-      <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-    </section>
-    <section class="advantages__item">
-      <h2 class="advantages__heading">Заводит новых друзей</h2>
-      <p class="advantages__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-    </section>
+    <div class="advantages__wrap">
+      <section class="advantages__item">
+        <h2 class="advantages__heading">Поднимает настроение</h2>
+        <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+      </section>
+      <section class="advantages__item">
+        <h2 class="advantages__heading">Меняет мир вокруг</h2>
+        <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+      </section>
+      <section class="advantages__item">
+        <h2 class="advantages__heading">Заводит новых друзей</h2>
+        <p class="advantages__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+      </section>
+    </div>
   </div>
   <!-- advantages -->
 
   <!-- review wrapper-->
-  <div class="review-wrap">
+  <div class="review">
 
     <!-- review -->
-    <div class="review">
+    <div class="review__wrap">
       <div class="review__item">
         <div class="review__author">Николай Петров</div>
         <p class="review__text">
@@ -107,7 +109,7 @@
           фотографии!»
         </p>
       </div>
-    </div>
+
     <!-- review -->
 
     <!-- slider navigation -->
@@ -118,82 +120,88 @@
     </ul>
     <!-- slider navigation -->
 
+    </div>
+
   </div>
   <!-- review wrapper-->
 
   <!-- price tables -->
   <div class="price">
 
-    <!-- table-1 -->
-    <table class="price__table">
-      <thead class="price__table-head">
+    <div class="price__wrap">
+
+      <!-- table-1 -->
+      <table class="price__table">
+        <thead class="price__table-head">
+          <tr class="price__table-head-row">
+            <td class="price__table-head-col">База<div class="price__table-head-col-usd">1,99 usd</div></td>
+          </tr>
+        </thead>
+        <tbody class="price__table-body">
+          <tr class="price__table-body-row">
+            <td class="price__table-body-col price__table-body-col--checked">Розовый фильр</td>
+          </tr>
+          <tr class="price__table-body-row">
+            <td class="price__table-body-col">Смайлики</td>
+          </tr>
+          <tr class="price__table-body-row">
+            <td class="price__table-body-col">Коментарии</td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- table-1 -->
+
+      <!-- table-2 -->
+      <table class="price__table">
+        <thead class="price__table-head">
         <tr class="price__table-head-row">
-          <td class="price__table-head-col">База<div class="price__table-head-col-usd">1,99 usd</div></td>
+          <td class="price__table-head-col price__table-head-col--hit">Стандарт<div class="price__table-head-col-usd">3,99 usd</div></td>
         </tr>
-      </thead>
-      <tbody class="price__table-body">
+        </thead>
+        <tbody class="price__table-body">
         <tr class="price__table-body-row">
           <td class="price__table-body-col price__table-body-col--checked">Розовый фильр</td>
         </tr>
         <tr class="price__table-body-row">
-          <td class="price__table-body-col">Смайлики</td>
+          <td class="price__table-body-col price__table-body-col--checked">Смайлики</td>
         </tr>
         <tr class="price__table-body-row">
           <td class="price__table-body-col">Коментарии</td>
         </tr>
-      </tbody>
-    </table>
-    <!-- table-1 -->
+        </tbody>
+      </table>
+      <!-- table-2 -->
 
-    <!-- table-2 -->
-    <table class="price__table">
-      <thead class="price__table-head">
-      <tr class="price__table-head-row">
-        <td class="price__table-head-col price__table-head-col--hit">Стандарт<div class="price__table-head-col-usd">3,99 usd</div></td>
-      </tr>
-      </thead>
-      <tbody class="price__table-body">
-      <tr class="price__table-body-row">
-        <td class="price__table-body-col price__table-body-col--checked">Розовый фильр</td>
-      </tr>
-      <tr class="price__table-body-row">
-        <td class="price__table-body-col price__table-body-col--checked">Смайлики</td>
-      </tr>
-      <tr class="price__table-body-row">
-        <td class="price__table-body-col">Коментарии</td>
-      </tr>
-      </tbody>
-    </table>
-    <!-- table-2 -->
+      <!-- table-3 -->
+      <table class="price__table">
+        <thead class="price__table-head">
+        <tr class="price__table-head-row">
+          <td class="price__table-head-col">Анлим<div class="price__table-head-col-usd">9,99 usd</div></td>
+        </tr>
+        </thead>
+        <tbody class="price__table-body">
+        <tr class="price__table-body-row">
+          <td class="price__table-body-col price__table-body-col--checked">Розовый фильр</td>
+        </tr>
+        <tr class="price__table-body-row">
+          <td class="price__table-body-col price__table-body-col--checked">Смайлики</td>
+        </tr>
+        <tr class="price__table-body-row">
+          <td class="price__table-body-col price__table-body-col--checked">Коментарии</td>
+        </tr>
+        </tbody>
+      </table>
+      <!-- table-1 -->
 
-    <!-- table-3 -->
-    <table class="price__table">
-      <thead class="price__table-head">
-      <tr class="price__table-head-row">
-        <td class="price__table-head-col">Анлим<div class="price__table-head-col-usd">9,99 usd</div></td>
-      </tr>
-      </thead>
-      <tbody class="price__table-body">
-      <tr class="price__table-body-row">
-        <td class="price__table-body-col price__table-body-col--checked">Розовый фильр</td>
-      </tr>
-      <tr class="price__table-body-row">
-        <td class="price__table-body-col price__table-body-col--checked">Смайлики</td>
-      </tr>
-      <tr class="price__table-body-row">
-        <td class="price__table-body-col price__table-body-col--checked">Коментарии</td>
-      </tr>
-      </tbody>
-    </table>
-    <!-- table-1 -->
+      <!-- slider navigation -->
+      <ul class="slider-navigation">
+        <li class="slider-navigation__item"><a href="#" class="slider-navigation__link slider-navigation__link--active"></a></li>
+        <li class="slider-navigation__item"><a href="#" class="slider-navigation__link"></a></li>
+        <li class="slider-navigation__item"><a href="#" class="slider-navigation__link"></a></li>
+      </ul>
+      <!-- slider navigation -->
 
-    <!-- slider navigation -->
-    <ul class="slider-navigation">
-      <li class="slider-navigation__item"><a href="#" class="slider-navigation__link slider-navigation__link--active"></a></li>
-      <li class="slider-navigation__item"><a href="#" class="slider-navigation__link"></a></li>
-      <li class="slider-navigation__item"><a href="#" class="slider-navigation__link"></a></li>
-    </ul>
-    <!-- slider navigation -->
+    </div>
 
   </div>
   <!-- price tables -->
@@ -202,7 +210,7 @@
 <!-- Main content -->
 
 <!-- Page footer -->
-<footer class="page-footer">
+<footer class="page-footer page-footer--no-padding">
   <div class="contacts">
     <div class="h1">Остались вопросы? Свяжитесь с нами</div>
     <div class="contacts__item">
