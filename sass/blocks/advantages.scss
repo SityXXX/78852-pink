@@ -14,14 +14,21 @@
   }
 
   &__wrap {
+
     padding-top: 50px;
     padding-right: 20px;
     padding-bottom: 290px;
     padding-left: 20px;
     text-align: center;
-    background: url("../img/iphone-hello-all.png");
+    background-image: url('../img/iphone-screen-desktop-3@1x.png');
     background-repeat: no-repeat;
     background-position: 50% 100%;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+      background-image: url('../img/iphone-screen-desktop-3@2x.png');
+
+    }
 
   }
 
