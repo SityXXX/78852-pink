@@ -3,9 +3,19 @@
   display: block;
   width: 74px;
   height: 23px;
-  background: url("../img/logotype-white-mobile.svg") 50% 50% no-repeat;
+  background-image: url("../img/logotype-white-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   text-indent: -9999px;
   float: left;
+
+  @media (min-width: 700px) {
+
+    width: 145px;
+    height: 40px;
+    background-image: url("../img/logotype-white-tablet.svg");
+
+  }
 
   &--with-logo {
 

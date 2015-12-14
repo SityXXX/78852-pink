@@ -9,6 +9,12 @@
   height: 24px;
   float: right;
 
+  @media (min-width: 700px) {
+
+    margin-top: 15px;
+
+  }
+
   &--opened {
 
     background-image: url("../img/menu-cross.png");
