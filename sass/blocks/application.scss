@@ -1,10 +1,17 @@
 .application {
 
   padding-top: 28px;
-  padding-right: 20px;
   padding-bottom: 30px;
-  padding-left: 20px;
   background-color: #1d2631;
+
+  @media (min-width: $tablet) {
+
+    position: absolute;
+    bottom: 5%;
+    width: 380px;
+    background-color: transparent;
+
+  }
 
   &__available-on {
     text-align: center;

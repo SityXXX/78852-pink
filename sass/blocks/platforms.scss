@@ -7,9 +7,17 @@
   text-align: center;
 
   &__item {
+
     display: inline-block;
     vertical-align: middle;
-    margin: 0 18px;
+    margin-right: 36px;
+
+    &:last-child {
+
+      margin-right: 0;
+
+    }
+
   }
 
 }

@@ -38,3 +38,25 @@ legend {
   text-align: center;
 
 }
+
+.container {
+
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media (min-width: $tablet) {
+
+    padding-left: 40px;
+    padding-right: 40px;
+
+  }
+
+}
+
+.clearfix::after {
+
+  content: '';
+  display: table;
+  clear: both;
+
+}
