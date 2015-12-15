@@ -13,55 +13,31 @@ body {
   text-align: center;
   margin-bottom: 30px;
 
-  @media (min-width: $tablet) {
-
-    font-size: 40px;
-
-  }
-
-  &--imaged {
-
-    padding-bottom: 310px;
-    background-image: url('../img/iphone-hand-mobile.png');
-    background-position: 0 100%;
-    background-repeat: no-repeat;
-
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-
-      background-image: url('../img/iphone-hand-mobile@2x.png');
-
-    }
-
-    @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
-
-      background-image: url('../img/iphone-hand-mobile@3x.png');
-
-    }
-
-    @media (min-width: $tablet) {
-
-      padding-right: 61.29%;
-      padding-top: 100px;
-      padding-left: 9.67%;
-      background-image: url('../img/iphone-hand-tablet@1x.png');
-      background-position: 50% 100%;
-
-    }
-
-  }
-
   &:last-child {
 
     margin-bottom: 0;
 
   }
 
-  &--light {
+  &--page-header {
 
     color: #ffffff;
 
+    @media (min-width: $tablet) {
+
+      max-width: 300px;
+      padding-left: 60px;
+      padding-right: 60px;
+
+    }
+
   }
 
+  @media (min-width: $tablet) {
 
+    font-size: 40px;
+    margin-bottom: 0;
+
+  }
 
 }
