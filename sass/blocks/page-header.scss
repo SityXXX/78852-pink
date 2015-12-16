@@ -63,6 +63,20 @@
       background-image: url('../img/iphone-hand-tablet@1x.png');
       background-position: 100% 100%;
 
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+        padding-top: 115px;
+        padding-bottom: 460px;
+        background-image: url('../img/iphone-hand-tablet@2x.png');
+
+      }
+
+    }
+
+    @media (min-width: $desktop) {
+
+      background-image: url('../img/iphone-hand-desktop@1x.png');
+
     }
 
   }

@@ -7,9 +7,26 @@
   @media (min-width: $tablet) {
 
     position: absolute;
+    padding: 0;
     bottom: 110px;
-    width: 50%;
+    width: 100%;
     background-color: transparent;
+
+  }
+
+  @media (min-width: $desktop) {
+
+
+
+  }
+
+  &__wrap {
+
+    @media (min-width: $tablet) {
+
+      width: 300px;
+
+    }
 
   }
 

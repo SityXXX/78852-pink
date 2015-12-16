@@ -9,17 +9,23 @@
   height: 24px;
   float: right;
 
-  @media (min-width: 700px) {
+  @media (min-width: $tablet) {
 
     margin-top: 15px;
 
   }
 
+  @media (min-width: $desktop) {
+
+    display: none;
+
+  }
+
   &--opened {
 
-    background-image: url("../img/menu-cross.png");
-    width: 23px;
-    height: 22px;
+    background-image: url("../img/menu-cross.svg");
+    width: 24px;
+    height: 24px;
 
   }
 

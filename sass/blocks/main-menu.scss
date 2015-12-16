@@ -1,13 +1,24 @@
 .main-menu {
+
   position: absolute;
-  background-color: $brand-color;
   display: none;
   width: 100%;
+
+  &--opened {
+
+    display: block;
+
+  }
+
   &__list {
+
     padding: 0;
     margin: 0;
+
   }
+
   &__link {
+
     background-color: $brand-color;
     color: #ffffff;
     text-align: center;
@@ -22,5 +33,22 @@
     padding-left: 10px;
     border-top: 1px solid #485461;
     border-bottom: 1px solid #030303;
+    display: block;
+
+    @media (min-width: $desktop) {
+
+      background-color: transparent;
+      border: none;
+
+    }
+
   }
+
+  @media (min-width: $desktop) {
+
+    position: static;
+    display: block;
+
+  }
+
 }

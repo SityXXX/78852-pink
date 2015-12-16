@@ -25,9 +25,15 @@ body {
 
     @media (min-width: $tablet) {
 
-      max-width: 48.5%;
-      padding-left: 60px;
-      padding-right: 60px;
+      width: 300px;
+      padding-left: 55px;
+      padding-right: 55px;
+
+    }
+
+    @media (min-width: $desktop) {
+
+      padding: 0;
 
     }
 
@@ -37,6 +43,12 @@ body {
 
     font-size: 40px;
     margin-bottom: 0;
+
+  }
+
+  @media (min-width: $desktop) {
+
+    font-size: 50px;
 
   }
 
