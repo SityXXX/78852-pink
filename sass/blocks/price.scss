@@ -1,26 +1,12 @@
 .price {
 
   background-color: $gray-bg-color;
-
-  &::before {
-
-    display: block;
-    content: '';
-    background-image: url('../img/triangle-white.svg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    height: 32px;
-
-  }
-
-  &__wrap {
-
-    padding-top: 67px;
-    padding-bottom: 99px;
-    padding-right: 20px;
-    padding-left: 20px;
-    position: relative;
-  }
+  background-image: url('../img/triangle-white.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 32px;
+  padding-top: 67px;
+  padding-bottom: 99px;
+  position: relative;
 
   &__table {
 
@@ -30,6 +16,25 @@
     border-left: 2px solid #e5e5e5;
     border-collapse: collapse;
     background-color: #ffffff;
+
+    &--plugins {
+
+      display: none;
+
+      @media (min-width: $tablet) {
+
+        display: table;
+
+      }
+
+    }
+
+    @media (min-width: $tablet) {
+
+      float: left;
+      width: 25%;
+
+    }
 
   }
 
@@ -41,6 +46,7 @@
   }
 
   &__table-head-col {
+
     padding-top: 22px;
     padding-right: 22px;
     padding-bottom: 22px;
@@ -54,7 +60,8 @@
     overflow: hidden;
 
     &--hit::after {
-      content: 'хит';
+
+      content: attr(data-hit);
       display: block;
       width: 102px;
       background-color: #d22856;
@@ -65,15 +72,18 @@
       text-transform: uppercase;
       line-height: 30px;
       font-weight: 600;
+
     }
 
   }
 
   &__table-head-col-usd {
+
     font-size: 24px;
     line-height: 30px;
     font-weight: 300;
     margin-top: 6px;
+
   }
 
 
@@ -86,18 +96,48 @@
 
   &__table-body-col {
 
-    position: relative;
-    line-height: 30px;
     text-transform: uppercase;
     border: 2px solid #e5e5e5;
-    padding-top: 15px;
-    padding-right: 55px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-right: 18px;
+    padding-bottom: 10px;
     padding-left: 22px;
     text-align: left;
+    line-height: 30px;
 
     &:first-child {
+
       border-top: none;
+
+    }
+
+    @media (min-width: $tablet) {
+
+      text-align: center;
+
+    }
+
+  }
+
+  &__table-body-col-plugin {
+
+    @media (min-width: $tablet) {
+
+      display: none;
+
+    }
+
+  }
+
+  &__table-body-col-state {
+
+    vertical-align: middle;
+    float: right;
+
+    @media (min-width: $tablet) {
+
+      float: none;
+
     }
 
   }
