@@ -70,10 +70,36 @@ legend {
 
 .block {
 
+  display: block;
+
+}
+
+.mobile-hide {
+
+  display: none;
+
+  @media (min-width: $tablet) {
+
+    display: table-cell;
+
+  }
+
+}
+
+.tablet-show {
+
+  display: none;
+
   @media (min-width: $tablet) {
 
     display: block;
 
   }
+
+}
+
+.invisible {
+
+  visibility: hidden;
 
 }

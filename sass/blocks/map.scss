@@ -3,6 +3,18 @@
   position: relative;
   height: 200px;
 
+  @media (min-width: $tablet) {
+
+    height: 378px;
+
+  }
+
+  @media (min-width: $desktop) {
+
+    height: 522px;
+
+  }
+
   &::before {
 
     content: '';
@@ -13,6 +25,18 @@
     background-size: 100% 100%;
     position: absolute;
     z-index: 1;
+
+    @media (min-width: $tablet) {
+
+      height: 72px;
+
+    }
+
+    @media (min-width: $desktop) {
+
+      height: 123px;
+
+    }
 
   }
 

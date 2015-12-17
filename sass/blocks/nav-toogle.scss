@@ -15,12 +15,6 @@
 
   }
 
-  @media (min-width: $desktop) {
-
-    display: none;
-
-  }
-
   &--opened {
 
     background-image: url("../img/menu-cross.svg");

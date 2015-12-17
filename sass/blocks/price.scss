@@ -10,29 +10,24 @@
 
   &__table {
 
-    width: 100%;
-    border-right: 2px solid #e5e5e5;
-    border-bottom: 2px solid #e5e5e5;
-    border-left: 2px solid #e5e5e5;
     border-collapse: collapse;
-    background-color: #ffffff;
-
-    &--plugins {
-
-      display: none;
-
-      @media (min-width: $tablet) {
-
-        display: table;
-
-      }
-
-    }
+    width: 100%;
 
     @media (min-width: $tablet) {
 
       float: left;
       width: 25%;
+
+    }
+
+    &--with-prop-list {
+
+      @media (min-width: $tablet) {
+
+        width: 50%;
+
+      }
+
 
     }
 
@@ -58,6 +53,10 @@
     text-align: center;
     position: relative;
     overflow: hidden;
+    border-top: 2px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
 
     &--hit::after {
 
@@ -66,12 +65,26 @@
       width: 102px;
       background-color: #d22856;
       position: absolute;
-      left: -24px;
-      top: 11px;
+      left: -25px;
+      top: 10px;
       transform: rotate(-45deg);
       text-transform: uppercase;
       line-height: 30px;
       font-weight: 600;
+
+      @media (min-width: $tablet) {
+
+        width: 85px;
+        top: 5px;
+        left: -23px;
+
+      }
+
+    }
+
+    @media (min-width: $tablet) {
+
+      font-size: 16px;
 
     }
 
@@ -83,6 +96,12 @@
     line-height: 30px;
     font-weight: 300;
     margin-top: 6px;
+
+    @media (min-width: $tablet) {
+
+      font-size: 18px;
+
+    }
 
   }
 
@@ -97,23 +116,32 @@
   &__table-body-col {
 
     text-transform: uppercase;
-    border: 2px solid #e5e5e5;
+    border-top: 2px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
     padding-top: 10px;
     padding-right: 18px;
     padding-bottom: 10px;
     padding-left: 22px;
     text-align: left;
     line-height: 30px;
-
-    &:first-child {
-
-      border-top: none;
-
-    }
+    background-color: #ffffff;
 
     @media (min-width: $tablet) {
 
       text-align: center;
+      padding-left: 15px;
+      padding-right: 15px;
+
+    }
+
+    &--prop {
+
+      text-align: left;
+      text-transform: none;
+      width: 50%;
+      border-width: 2px
 
     }
 

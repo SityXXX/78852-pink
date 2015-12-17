@@ -146,12 +146,11 @@
   <!-- advantages -->
 
 
-  <!-- review wrapper-->
+  <!-- review -->
   <div class="review">
 
 
-    <!-- review wrap-->
-    <div class="review__wrap">
+    <div class="container">
 
 
       <!-- review -->
@@ -176,11 +175,35 @@
 
 
     </div>
-    <!-- review wrap -->
 
 
   </div>
-  <!-- review wrapper-->
+  <!-- review -->
+
+  <!-- round diagram -->
+
+  <div class="diagram tablet-show">
+
+    <div class="container">
+
+      <div class="diagram__wrap">
+
+        <div class="h2">Эффект на 24 часа!</div>
+
+        <p>
+          Британские ученые провели исследования
+          и доказали, что положительный эффект
+          от использования приложения длится
+          целые сутки!
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- round diagram -->
 
 
   <!-- price tables -->
@@ -190,58 +213,31 @@
     <div class="container clearfix">
 
 
-      <!-- table-0 -->
-      <table class="price__table price__table--plugins">
-        <thead class="price__table-head">
-          <tr class="price__table-head-row">
-            <td class="price__table-head-col">База<div class="price__table-head-col-usd">1,99 usd</div></td>
-          </tr>
-        </thead>
-        <tbody class="price__table-body">
-          <tr class="price__table-body-row">
-            <td class="price__table-body-col">
-              <span class="price__table-body-col-plugin">Розовый фильтр</span>
-              <img class="price__table-body-col-state" src="img/yes.svg" alt="">
-            </td>
-          </tr>
-          <tr class="price__table-body-row">
-            <td class="price__table-body-col">
-              <span class="price__table-body-col-plugin">Смайлики</span>
-              <img class="price__table-body-col-state" src="img/no.svg" alt="">
-            </td>
-          </tr>
-          <tr class="price__table-body-row">
-            <td class="price__table-body-col">
-              <span class="price__table-body-col-plugin">Коментарии</span>
-              <img class="price__table-body-col-state" src="img/no.svg" alt="">
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <!-- table-0 -->
-
-
       <!-- table-1 -->
-      <table class="price__table">
+      <table class="price__table price__table--with-prop-list">
         <thead class="price__table-head">
           <tr class="price__table-head-row">
+            <td class="price__table-head-col invisible mobile-hide"></td>
             <td class="price__table-head-col">База<div class="price__table-head-col-usd">1,99 usd</div></td>
           </tr>
         </thead>
         <tbody class="price__table-body">
           <tr class="price__table-body-row">
+            <td class="price__table-body-col price__table-body-col--prop mobile-hide">Розовый фильтр</td>
             <td class="price__table-body-col">
               <span class="price__table-body-col-plugin">Розовый фильтр</span>
               <img class="price__table-body-col-state" src="img/yes.svg" alt="">
             </td>
           </tr>
           <tr class="price__table-body-row">
+            <td class="price__table-body-col price__table-body-col--prop mobile-hide">Смайлики</td>
             <td class="price__table-body-col">
               <span class="price__table-body-col-plugin">Смайлики</span>
               <img class="price__table-body-col-state" src="img/no.svg" alt="">
             </td>
           </tr>
           <tr class="price__table-body-row">
+            <td class="price__table-body-col price__table-body-col--prop mobile-hide">Коментарии</td>
             <td class="price__table-body-col">
               <span class="price__table-body-col-plugin">Коментарии</span>
               <img class="price__table-body-col-state" src="img/no.svg" alt="">
@@ -334,7 +330,7 @@
 <!-- Main content -->
 
 <div class="contacts">
-  <div class="h1">Остались вопросы? Свяжитесь с нами</div>
+  <div class="h1"><span class="block">Остались вопросы?</span><span class="block">Свяжитесь с нами</span></div>
   <div class="contacts__item">
     <div class="contacts__heading">Звоните:</div>
     <p class="contacts__text">+7 (812) 555-66-66</p>
@@ -355,7 +351,7 @@
 <!-- map -->
 
 
-<!-- google map -->
+<!-- google map
 <script type="text/javascript">
   var map;
   function initMap() {
@@ -380,7 +376,7 @@
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuE7UQVssKkcUvQrUq7oyjuVTAU8m3szY&callback=initMap">
 </script>
-<!-- google map -->
+google map -->
 
 
 </body>
