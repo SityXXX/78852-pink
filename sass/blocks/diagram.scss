@@ -1,13 +1,71 @@
 .diagram {
 
+  background-color: #ffffff;
+
   &__wrap {
 
-    @media (min-width: $tablet) {
 
-      padding-left: 50%;
 
+  }
+
+  &__left-wrap {
+
+    float: left;
+    width: 50%;
+
+    @media (min-width: $desktop) {
+
+      width: 33.33333%;
 
     }
+
+  }
+
+  &__right-wrap {
+
+    float: left;
+    width: 50%;
+
+    @media (min-width: $desktop) {
+
+      width: 66.66666%;
+
+    }
+
+  }
+
+  &__timer-wrap {
+
+    background-image: url('../img/timer.svg');
+    background-repeat: no-repeat;
+    width: 262px;
+    height: 302px;
+    background-size: contain;
+    padding-top: 64px;
+    padding-right: 25px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+
+  }
+
+  &__timer-inner {
+
+    border-radius: 50%;
+    border: 10px solid #d22856;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  &__timer-time {
+
+    font-size: 105px;
+    line-height: 1;
+    font-weight: 700;
+    color: #d22856;
+    text-align: center;
+    margin-top: 50%;
+    transform: translate(0, -50%);
 
   }
 

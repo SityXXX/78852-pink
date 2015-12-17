@@ -34,6 +34,13 @@
 
     }
 
+    @media (min-width: $desktop) {
+
+      background-image: url('../img/background-fullsize.jpg');
+      background-position: 50% 50%;
+
+    }
+
   }
 
   &__heading-wrap {

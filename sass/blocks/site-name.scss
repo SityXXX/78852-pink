@@ -17,6 +17,12 @@
 
   }
 
+  @media (min-width: $desktop) {
+
+    background-image: url('../img/logotype-white-desktop.svg');
+
+  }
+
   &--with-logo {
 
     float: none;

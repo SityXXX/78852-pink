@@ -8,6 +8,18 @@
   padding-bottom: 99px;
   position: relative;
 
+  @media (min-width: $tablet) {
+
+    background-size: 100% 53px;
+
+  }
+
+  @media (min-width: $desktop) {
+
+    background-size: 100% 91px;
+
+  }
+
   &__table {
 
     border-collapse: collapse;
@@ -104,8 +116,6 @@
     }
 
   }
-
-
 
   &__tabel-body {
 

@@ -12,6 +12,12 @@
 
   }
 
+  @media (min-width: $desktop) {
+
+    background-size: 100% 91px;
+
+  }
+
   &__wrap {
 
     background-image: url('../img/screen-mobile-3.png');
