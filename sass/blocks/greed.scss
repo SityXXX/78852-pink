@@ -1,0 +1,116 @@
+.container {
+
+  padding-left: 3.125%;
+  padding-right: 3.125%;
+
+  @media (min-width: $tablet) {
+
+    padding-left: 4.28571%;
+    padding-right: 4.28571%;
+
+  }
+
+  @media (min-width: $desktop) {
+
+    padding-left: 10%;
+    padding-right: 10%;
+
+  }
+
+}
+
+.row {
+
+  padding-left: -$columns-padding;
+  padding-right: -$columns-padding;
+
+}
+
+.row::after,
+.row::before {
+
+  content: '';
+  display: table;
+  clear: both;
+
+}
+
+[class^="col-"] {
+
+  float: left;
+  position: relative;
+  padding-left: $columns-padding;
+  padding-right: $columns-padding;
+
+}
+
+
+
+@for $i from 1 through $columns-mobile {
+
+  .col-mobile-#{$i} {
+
+    width: ($i / $columns-mobile) * 100%;
+
+  }
+
+  .col-mobile-offset-#{$i} {
+
+    margin-right: ($i / $columns-mobile) * 100%;
+
+  }
+
+
+}
+
+
+
+@for $i from 1 through $columns-tablet {
+
+  .col-tablet-#{$i} {
+
+    @media (min-width: $tablet) {
+
+      width: ($i / $columns-tablet) * 100%;
+
+    }
+
+  }
+
+  .col-tablet-offset-#{$i} {
+
+    @media (min-width: $tablet) {
+
+      margin-right: ($i / $columns-tablet) * 100%;
+
+    }
+
+  }
+
+}
+
+
+
+@for $i from 1 through $columns-desktop {
+
+  .col-desktop-#{$i} {
+
+    @media (min-width: $desktop) {
+
+      width: ($i / $columns-desktop) * 100%;
+
+    }
+
+    @media (min-width: $desktop) {
+
+      .col-desktop-offset-#{$i} {
+
+        margin-right: ($i / $columns-desktop) * 100%;
+
+      }
+
+    }
+
+  }
+
+}

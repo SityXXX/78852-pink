@@ -37,16 +37,74 @@
 
     }
 
+    @media (min-width: $desktop) {
+
+      padding-left: 0;
+      padding-top: 0;
+      background: none;
+
+    }
+
   }
 
   &__item {
 
     margin-bottom: 31px;
-    text-align: center;
 
-    @media (min-width: $tablet) {
+    @media (min-width: $desktop) {
 
-      text-align: left;
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      text-align: center;
+      padding-top: 355px;
+
+    }
+
+    &--mood {
+
+      @media (min-width: $desktop) {
+
+        background-image: url('../img/iphone-screen-desktop-1@1x.png');
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+          background-image: url('../img/iphone-screen-desktop-1@2x.png');
+
+        }
+
+      }
+
+    }
+
+    &--world {
+
+      @media (min-width: $desktop) {
+
+        background-image: url('../img/iphone-screen-desktop-2@1x.png');
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+          background-image: url('../img/iphone-screen-desktop-2@2x.png');
+
+        }
+
+      }
+
+    }
+
+    &--friends {
+
+      @media (min-width: $desktop) {
+
+        background-image: url('../img/iphone-screen-desktop-3@1x.png');
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+          background-image: url('../img/iphone-screen-desktop-3@2x.png');
+
+        }
+
+      }
 
     }
 
@@ -59,13 +117,39 @@
     font-size: 18px;
     line-height: 24px;
     color: #000;
+    text-align: center;
+
+    @media (min-width: $tablet) {
+
+      text-align: left;
+
+    }
+
+    @media (min-width: $desktop) {
+
+      text-align: center;
+
+    }
 
   }
 
   &__text {
 
-    line-height: 24px;
     margin: 0;
+
+    @media (min-width: $tablet) {
+
+      text-align: left;
+      padding-left: 30px;
+      padding-right: 30px;
+
+    }
+
+    @media (min-width: $desktop) {
+
+      text-align: center;
+
+    }
 
   }
 

@@ -1,7 +1,14 @@
 body {
 
-  font: normal 14px/27px 'Open Sans', 'Arial', sans-serif;
+  font: normal 14px/24px 'Open Sans', 'Arial', sans-serif;
   color: $brand-color;
+
+  @media (min-width: $desktop) {
+
+    line-height: 30px;
+    font-size: 18px;
+
+  }
 
 }
 

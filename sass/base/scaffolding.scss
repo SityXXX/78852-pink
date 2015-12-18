@@ -19,6 +19,12 @@ body {
 
 }
 
+a {
+
+  color: $crimson-color;
+
+}
+
 fieldset {
 
   border: none;
@@ -39,26 +45,7 @@ legend {
 
 }
 
-.container {
 
-  padding-left: 6.25%;
-  padding-right: 6.25%;
-
-  @media (min-width: $tablet) {
-
-    padding-left: 5.55%;
-    padding-right: 5.55%;
-
-  }
-
-  @media (min-width: $desktop) {
-
-    padding-left: 10.83%;
-    padding-right: 10.83%;
-
-  }
-
-}
 
 .clearfix::after {
 
