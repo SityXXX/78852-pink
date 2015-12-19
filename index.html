@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/vendors/owl.carousel.css">
+  <script src="js/vendors/jquery-2.1.4.js"></script>
   <title>HTML Academy: Пинк</title>
 </head>
 <body>
@@ -88,7 +90,6 @@
   <div class="application">
 
     <div class="container">
-
       <div class="row">
 
         <div class="col-mobile-4 col-tablet-4">
@@ -137,6 +138,7 @@
           <div class="h1">Устали от серости мегаполиса?</div>
           <div class="h1">Нам есть, что вам <span class="block">предложить!</span></div>
         </div>
+      </div>
     </div>
   </div>
   <!-- promo -->
@@ -178,7 +180,7 @@
 
         <div class="row">
 
-          <div class="diagram__left-wrap">
+          <div class="col-tablet-4 col-desktop-5">
 
             <div class="diagram__timer-wrap">
 
@@ -192,7 +194,7 @@
 
           </div>
 
-          <article class="diagram__right-wrap">
+          <article class="col-tablet-4 col-desktop-7">
 
             <div class="diagram__heading">Эффект на 24 часа!</div>
 
@@ -217,35 +219,45 @@
 
 
   <!-- review -->
-  <div class="review">
+  <div class="review owl-carousel">
 
 
-    <div class="container">
+          <!-- review -->
+          <div class="review__item owl-item">
+            <div class="review__author">Николай Петров</div>
+            <p class="review__text">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+              фотографии!»
+            </p>
+          </div>
+          <div class="review__item owl-item">
+            <div class="review__author">Николай Петров</div>
+            <p class="review__text">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+              фотографии!»
+            </p>
+          </div>
+          <div class="review__item owl-item">
+            <div class="review__author">Николай Петров</div>
+            <p class="review__text">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+              фотографии!»
+            </p>
+          </div>
+          <!-- review -->
 
-
-      <!-- review -->
-      <div class="review__item">
-        <div class="review__author">Николай Петров</div>
-        <p class="review__text">
-          «Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-          привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
-          фотографии!»
-        </p>
+      <div class="owl-controls">
+        <!-- slider navigation -->
+        <div class="slider-navigation owl-dots">
+          <div class="slider-navigation__item owl-dot active"><span></span></div>
+          <div class="slider-navigation__item owl-dot"><span></span></div>
+          <div class="slider-navigation__item owl-dot"><span></span></div>
+        </div>
+        <!-- slider navigation -->
       </div>
-    <!-- review -->
-
-
-    <!-- slider navigation -->
-    <ul class="slider-navigation">
-      <li class="slider-navigation__item"><a href="#" class="slider-navigation__link slider-navigation__link--active"></a></li>
-      <li class="slider-navigation__item"><a href="#" class="slider-navigation__link"></a></li>
-      <li class="slider-navigation__item"><a href="#" class="slider-navigation__link"></a></li>
-    </ul>
-    <!-- slider navigation -->
-
-
-    </div>
-
 
   </div>
   <!-- review -->
@@ -395,7 +407,6 @@
 <div class="map" id="map"></div>
 <!-- map -->
 
-
 <!-- google map -->
 <script type="text/javascript">
   var map;
@@ -423,6 +434,7 @@
 </script>
 <!-- google map -->
 
-
+<script src="js/vendors/owl.carousel.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

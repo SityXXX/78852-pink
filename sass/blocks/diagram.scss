@@ -1,7 +1,12 @@
 .diagram {
 
-  background-color: #ffffff;
-  padding-top: 57px;
+  @media (min-width: $tablet) {
+
+    background-color: #ffffff;
+    padding-top: 57px;
+    padding-bottom: 38px;
+
+  }
 
   @media (min-width: $desktop) {
 
@@ -9,46 +14,21 @@
 
   }
 
-  &__left-wrap {
-
-    float: left;
-    width: 48.387%;
-
-    @media (min-width: $desktop) {
-
-      width: 31.914%;
-
-    }
-
-  }
-
-  &__right-wrap {
-
-    float: left;
-    width: 51.613%;
-    padding-left: 3.125%;
-    padding-top: 40px;
-
-    @media (min-width: $desktop) {
-
-      width: 68.086%;
-      padding-left: 10.156%;
-
-    }
-
-  }
-
   &__timer-wrap {
 
-    background-image: url('../img/timer.svg');
-    background-repeat: no-repeat;
-    width: 262px;
-    height: 302px;
-    background-size: contain;
-    padding-top: 65px;
-    padding-right: 26px;
-    padding-bottom: 25px;
-    padding-left: 24px;
+    @media (min-width: $tablet) {
+
+      background-image: url('../img/timer.svg');
+      background-repeat: no-repeat;
+      width: 262px;
+      height: 302px;
+      background-size: contain;
+      padding-top: 65px;
+      padding-right: 26px;
+      padding-bottom: 25px;
+      padding-left: 24px;
+
+    }
 
     @media (min-width: $desktop) {
 
@@ -92,10 +72,15 @@
 
   &__heading {
 
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 700;
-    color: #000000;
+    @media (min-width: $tablet) {
+
+      padding-top: 40px;
+      font-size: 30px;
+      line-height: 36px;
+      font-weight: 700;
+      color: #000000;
+
+    }
 
   }
 
