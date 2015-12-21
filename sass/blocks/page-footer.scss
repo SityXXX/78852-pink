@@ -10,10 +10,17 @@
 
   &__made-by-link {
 
+    display: inline-block;
     font-size: 18px;
     line-height: 1;
     color: $brand-color;
     text-decoration: none;
+    padding-right: 42px;
+    background-image: url('../img/htmlacademy.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
 
   }
 

@@ -3,14 +3,15 @@
   background-color: $gray-bg-color;
   background-image: url('../img/triangle-white.svg');
   background-repeat: no-repeat;
-  background-size: 100% 32px;
-  padding-top: 67px;
+  background-size: 100% 25px;
+  padding-top: 90px;
   padding-bottom: 99px;
   position: relative;
 
   @media (min-width: $tablet) {
 
     background-size: 100% 53px;
+    padding-bottom: 70px;
 
   }
 
@@ -69,6 +70,13 @@
     border-right: 1px solid #e5e5e5;
     border-bottom: 2px solid #e5e5e5;
     border-left: 1px solid #e5e5e5;
+
+    @media (min-width: $tablet) {
+
+      padding-top: 17px;
+      padding-bottom: 7px;
+
+    }
 
     &--hit::after {
 
@@ -130,9 +138,9 @@
     border-right: 1px solid #e5e5e5;
     border-bottom: 2px solid #e5e5e5;
     border-left: 1px solid #e5e5e5;
-    padding-top: 10px;
+    padding-top: 14px;
     padding-right: 18px;
-    padding-bottom: 10px;
+    padding-bottom: 14px;
     padding-left: 22px;
     text-align: left;
     line-height: 30px;
@@ -141,7 +149,9 @@
     @media (min-width: $tablet) {
 
       text-align: center;
+      padding-top: 7px;
       padding-left: 15px;
+      padding-bottom: 7px;
       padding-right: 15px;
 
     }

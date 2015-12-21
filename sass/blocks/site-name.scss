@@ -1,31 +1,49 @@
 .site-name {
 
-  display: block;
-  width: 74px;
-  height: 23px;
-  background-image: url("../img/logotype-white-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  text-indent: -9999px;
-  float: left;
+  text-align: left;
 
-  @media (min-width: 700px) {
+  &--footer {
 
-    width: 145px;
-    height: 40px;
-    background-image: url("../img/logotype-white-tablet.svg");
+    text-align: center;
 
   }
 
-  @media (min-width: $desktop) {
+  &__inner {
 
-    background-image: url('../img/logotype-white-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    text-indent: -9999px;
+    display: inline-block;
 
-  }
+    &--header {
 
-  &--with-logo {
+      width: 74px;
+      height: 23px;
+      background-image: url("../img/logotype-white-mobile.svg");
 
-    float: none;
+      @media (min-width: 700px) {
+
+        width: 145px;
+        height: 40px;
+        background-image: url("../img/logotype-white-tablet.svg");
+
+      }
+
+      @media (min-width: $desktop) {
+
+        background-image: url('../img/logotype-white-desktop.svg');
+
+      }
+
+    }
+
+    &--footer {
+
+      width: 145px;
+      height: 40px;
+      background-image: url("../img/logotype-blue-tablet.svg");
+
+    }
 
   }
 

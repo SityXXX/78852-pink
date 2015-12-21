@@ -8,7 +8,7 @@
 
     position: absolute;
     padding: 0;
-    bottom: 110px;
+    bottom: 117px;
     width: 100%;
     background-color: transparent;
 
@@ -18,17 +18,31 @@
 
     @media (min-width: $tablet) {
 
-      width: 300px;
+      max-width: 300px;
+
+    }
+
+    @media (min-width: $desktop) {
+
+      max-width: 300px;
 
     }
 
   }
 
   &__available-on {
+
     text-align: center;
     line-height: 24px;
     color: #ffffff;
     font-weight: 300;
+
+    @media (min-width: $tablet) {
+
+      font-size: 18px;
+
+    }
+
   }
 
 }

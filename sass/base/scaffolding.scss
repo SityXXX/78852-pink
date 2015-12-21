@@ -61,6 +61,16 @@ legend {
 
 }
 
+.tablet-block {
+
+  @media (min-width: $tablet) {
+
+    display: block;
+
+  }
+
+}
+
 .mobile-hide {
 
   display: none;

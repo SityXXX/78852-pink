@@ -1,12 +1,12 @@
 .container {
 
-  padding-left: 3.125%;
-  padding-right: 3.125%;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
 
   @media (min-width: $tablet) {
 
-    padding-left: 4.28571%;
-    padding-right: 4.28571%;
+    padding-left: 5.71428%;
+    padding-right: 5.71428%;
 
   }
 
@@ -21,8 +21,8 @@
 
 .row {
 
-  padding-left: -$columns-padding;
-  padding-right: -$columns-padding;
+  margin-left: -$columns-padding;
+  margin-right: -$columns-padding;
 
 }
 
@@ -41,6 +41,7 @@
   position: relative;
   padding-left: $columns-padding;
   padding-right: $columns-padding;
+  min-height: 1px;
 
 }
 
@@ -56,7 +57,7 @@
 
   .col-mobile-offset-#{$i} {
 
-    margin-right: ($i / $columns-mobile) * 100%;
+    margin-left: ($i / $columns-mobile) * 100%;
 
   }
 
@@ -81,7 +82,7 @@
 
     @media (min-width: $tablet) {
 
-      margin-right: ($i / $columns-tablet) * 100%;
+      margin-left: ($i / $columns-tablet) * 100%;
 
     }
 
@@ -105,7 +106,7 @@
 
       .col-desktop-offset-#{$i} {
 
-        margin-right: ($i / $columns-desktop) * 100%;
+        margin-left: ($i / $columns-desktop) * 100%;
 
       }
 
