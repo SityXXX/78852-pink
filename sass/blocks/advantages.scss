@@ -30,8 +30,8 @@
     @media (min-width: $tablet) {
 
       padding-left: 50%;
-      padding-top: 90px;
-      padding-bottom: 41px;
+      padding-top: 76px;
+      padding-bottom: 42px;
       background-image: url('../img/iphone-screen-tablet-3@1x.png');
       background-position: 0 100%;
       background-size: auto 481px;
@@ -44,6 +44,7 @@
       padding-left: 0;
       padding-top: 0;
       background: none;
+      padding-bottom: 20px;
 
     }
 
@@ -56,7 +57,7 @@
 
     @media (min-width: $tablet) {
 
-      margin-bottom: 35px;
+      margin-bottom: 33px;
 
       &:last-child {
 
@@ -64,14 +65,15 @@
 
       }
 
-      @media (min-width: $desktop) {
+    }
 
-        background-repeat: no-repeat;
-        background-position: 50% 0;
-        text-align: center;
-        padding-top: 355px;
+    @media (min-width: $desktop) {
 
-      }
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      text-align: center;
+      padding-top: 354px;
+      background-size: auto 301px;
 
     }
 
@@ -137,12 +139,18 @@
     @media (min-width: $tablet) {
 
       text-align: left;
+      margin-bottom: 13px;
 
     }
 
     @media (min-width: $desktop) {
 
       text-align: center;
+      font-size: 30px;
+      line-height: 30px;
+      padding-right: 30px;
+      padding-left: 30px;
+      margin-bottom: 23px;
 
     }
 
@@ -162,6 +170,8 @@
     @media (min-width: $desktop) {
 
       text-align: center;
+      padding-left: 30px;
+      padding-right: 30px;
 
     }
 

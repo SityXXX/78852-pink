@@ -9,40 +9,63 @@
 </head>
 <body>
 
-
 <!-- Page header -->
 <header class="page-header">
 
-  <!-- nav-bar -->
-  <div class="nav-bar" id="nav-bar">
+  <!-- page header wrapper -->
+  <div class="page-header__top-wrap">
 
-    <!-- sitename -->
-    <a class="site-name" href="/">Pink</a>
-    <!-- sitename -->
+    <!-- nav-bar -->
+    <div class="nav-bar" id="nav-bar">
+      <div class="nav-bar__wrap">
+        <div class="container">
+          <div class="row">
 
-    <!-- open menu btn -->
-    <a href="#" class="nav-toogle" id="nav-toogle">Открыть</a>
-    <!-- open menu btn -->
+            <div class="col-mobile-2 col-tablet-3 col-desktop-3">
+              <!-- sitename -->
+              <div class="site-name">
+                <a class="site-name__inner site-name__inner--header" href="/">Pink</a>
+              </div>
+              <!-- sitename -->
+            </div>
+
+            <div class="col-mobile-offset-1 col-mobile-1 col-tablet-offset-4 col-tablet-1 col-desktop-offset-2 col-desktop-7">
+
+              <!-- open menu btn -->
+              <a href="#" class="nav-toogle desktop-hide" id="nav-toogle">Открыть</a>
+              <!-- open menu btn -->
+
+            </div>
+            <!-- menu -->
+            <nav class="main-menu mobile-hide tablet-hide" id="main-menu">
+              <ul class="main-menu__list">
+                <li class="main-menu__item"><a href="#" class="main-menu__link">Информация</a></li>
+                <li class="main-menu__item"><a href="#" class="main-menu__link">Блог</a></li>
+                <li class="main-menu__item"><a href="#" class="main-menu__link">Отзывы</a></li>
+                <li class="main-menu__item"><a href="#" class="main-menu__link">Конкурс</a></li>
+              </ul>
+            </nav>
+            <!-- menu -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- nav-bar -->
+
+    <!-- site heading -->
+    <div class="page-header__heading-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-mobile-4 col-tablet-4">
+            <div class="h1 h1--page-header">Конкурс на самое безбашеное путешествие с Пинк</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- site heading -->
 
   </div>
-  <!-- nav-bar -->
-
-  <!-- menu -->
-  <nav class="main-menu" id="main-menu">
-    <ul class="main-menu__list">
-      <li class="main-menu__item"><a href="#" class="main-menu__link">Информация</a></li>
-      <li class="main-menu__item"><a href="#" class="main-menu__link">Блог</a></li>
-      <li class="main-menu__item"><a href="#" class="main-menu__link">Отзывы</a></li>
-      <li class="main-menu__item"><a href="#" class="main-menu__link">Конкурс</a></li>
-    </ul>
-  </nav>
-  <!-- menu -->
-
-  <!-- site heading -->
-  <div class="heading-wrap">
-    <div class="h1 h1--light">Конкурс на самое безбашеное путешествие с Пинк</div>
-  </div>
-  <!-- site heading -->
+  <!-- page header wrapper -->
 
 </header>
 <!-- Page header -->
@@ -54,252 +77,302 @@
   <form class="form" action="/" method="post" enctype="multipart/form-data">
 
     <!-- main fieldset -->
-    <div class="form__fieldset-wrap">
-      <fieldset class="form__fieldset">
+    <div class="form__fieldset-main-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-mobile-4">
+            <fieldset class="form__fieldset">
 
-        <div class="form__fieldset-intro">
-          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+              <div class="form__fieldset-intro">
+                Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="name">Имя: *</label>
+                <input class="form__input" id="name" type="text" name="name" placeholder="Введите ваше имя" required>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="lastname">Фамилия: *</label>
+                <input class="form__input" id="lastname" type="text" name="name" placeholder="Укажите фамилию" required>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label">Отчество: *</label>
+                <input class="form__input" type="text" name="name" placeholder="Ну и отчество тоже" required>
+              </div>
+
+            </fieldset>
+          </div>
         </div>
-
-        <div class="form__group">
-          <label class="form__label" for="name">Имя: *</label>
-          <input class="form__input" id="name" type="text" name="name" placeholder="Введите ваше имя" required>
-        </div>
-
-        <div class="form__group">
-          <label class="form__label" for="lastname">Фамилия: *</label>
-          <input class="form__input" id="lastname" type="text" name="name" placeholder="Укажите фамиию" required>
-        </div>
-
-        <div class="form__group">
-          <label class="form__label">Отчество: *</label>
-          <input class="form__input" type="text" name="name" placeholder="Ну и отчество тоже" required>
-        </div>
-
-      </fieldset>
+      </div>
     </div>
     <!-- main fieldset -->
 
     <!-- fieldset applictaion -->
-    <div class="form__fieldset-wrap">
-      <fieldset class="form__fieldset">
+    <div class="form__fieldset-application-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-mobile-4">
+            <fieldset class="form__fieldset">
 
-        <legend class="form__legend">С каким приложением путешествовали? *</legend>
+              <legend class="form__legend">С каким приложением путешествовали? *</legend>
 
-          <div class="form__group form__group--lg-distance">
-            <input class="form__radio" type="radio" name="app" id="pink_ios" checked><label class="form__radio-label" for="pink_ios">Pink для iOS:</label>
+                <div class="form__group form__group--lg-distance">
+                  <input class="form__radio" type="radio" name="app" id="pink_ios" checked><label class="form__radio-label" for="pink_ios">Pink для iOS:</label>
+                </div>
+
+                <div class="form__group form__group--lg-distance">
+                  <input class="form__radio" type="radio" name="app" id="pink_android"><label class="form__radio-label" for="pink_android">Pink на Android:</label>
+                </div>
+
+                <div class="form__group form__group--lg-distance">
+                  <input class="form__radio" type="radio" name="app" id="pink_windows"><label class="form__radio-label" for="pink_windows">Windows Phone:</label>
+                </div>
+
+            </fieldset>
           </div>
-
-          <div class="form__group form__group--lg-distance">
-            <input class="form__radio" type="radio" name="app" id="pink_android"><label class="form__radio-label" for="pink_android">Pink на Android:</label>
-          </div>
-
-          <div class="form__group form__group--lg-distance">
-            <input class="form__radio" type="radio" name="app" id="pink_windows"><label class="form__radio-label" for="pink_windows">Windows Phone:</label>
-          </div>
-
-      </fieldset>
+        </div>
+      </div>
     </div>
     <!-- fieldset applictaion -->
 
     <!-- fieldset when -->
-    <div class="form__fieldset-wrap">
-      <fieldset class="form__fieldset">
+    <div class="form__fieldset-date-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-mobile-4">
+            <fieldset class="form__fieldset">
 
-        <legend class="form__legend">Когда вы путешествовали? *</legend>
+              <legend class="form__legend">Когда вы путешествовали? *</legend>
 
-          <div class="form__group">
-            <input class="form__input" type="text" name="start-date" placeholder="1 апреля 2015">
-            <label class="form__label form__label--under-input">Дата виезда:</label>
+                <div class="form__group">
+                  <input class="form__input" type="text" name="start-date" placeholder="1 апреля 2015">
+                  <label class="form__label form__label--under-input">Дата виезда:</label>
+                </div>
+
+                <div class="form__group">
+                  <input class="form__input" type="text" name="days" placeholder="10 дней">
+                  <label class="form__label form__label--under-input">Продолжительность:</label>
+                </div>
+
+                <div class="form__group">
+                  <input class="form__input" type="text" name="checkout-date" placeholder="1 апреля 2015" disabled>
+                  <label class="form__label form__label--under-input">Дата возвращения:</label>
+                </div>
+
+            </fieldset>
           </div>
-
-          <div class="form__group">
-            <input class="form__input" type="text" name="days" placeholder="10 дней">
-            <label class="form__label form__label--under-input">Продолжительность:</label>
-          </div>
-
-          <div class="form__group">
-            <input class="form__input" type="text" name="checkout-date" placeholder="1 апреля 2015" disabled>
-            <label class="form__label form__label--under-input">Дата возврощения:</label>
-          </div>
-
-      </fieldset>
+        </div>
+      </div>
     </div>
     <!-- fieldset when -->
 
     <!-- fieldset number of travelers -->
-    <div class="form__fieldset-wrap">
-      <fieldset class="form__fieldset">
+    <div class="form__fieldset-travelers-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-mobile-4">
+            <fieldset class="form__fieldset">
 
-        <legend class="form__legend">Количество попутчиков *</legend>
+              <legend class="form__legend form__legend--for-travelers">Количество попутчиков *</legend>
 
-          <div class="form__group">
-            <input class="form__input form__input--delimited" type="text" name="people" required>
+                <div class="form__group form__group--add-travelers">
+                  <input class="form__input" type="text" name="people" required>
+                </div>
+
+                <div class="form__delimetr form__delimetr--for-travelers"></div>
+
+                <div class="form__traveler-wrap">
+
+                  <div class="form__group">
+
+                    <div class="form__input-group">
+                      <span class="form__add-on">№</span>
+                      <label for="pilyhrym" class="form__label">Имя: *</label>
+                    </div>
+
+                    <div class="form__input-group">
+                      <span class="form__add-on form__add-on--for-input">1</span>
+                      <input class="form__input" type="text" id="pilyhrym" name="name1" placeholder="Введите ваше имя" required>
+                    </div>
+
+                  </div>
+
+                  <div class="form__group form__group--narrow">
+                    <label for="sobriquet" class="form__label">Прозвище:</label>
+                    <input class="form__input" type="text" id="sobriquet" name="sobriquet" placeholder="Ну как же без этого!" required>
+                  </div>
+
+                </div>
+
+              <div class="form__traveler">
+
+                <div class="form__group">
+
+                  <div class="form__input-group">
+                    <span class="form__add-on">№</span>
+                    <label for="pilyhrym_2" class="form__label">Имя: *</label>
+                  </div>
+
+                  <div class="form__input-group">
+                    <span class="form__add-on form__add-on--for-input">2</span>
+                    <input class="form__input" type="text" id="pilyhrym_2" name="pilyhrym_2" placeholder="Введите ваше имя" required>
+                  </div>
+
+                </div>
+
+                <div class="form__group form__group--narrow">
+                  <label for="sobriquet_2" class="form__label">Прозвище:</label>
+                  <input class="form__input" type="text" id="sobriquet_2" name="sobriquet_2" placeholder="Ну как же без этого!" required>
+                </div>
+
+              </div>
+
+            </fieldset>
           </div>
-
-          <div class="form__delimetr"></div>
-
-          <div class="form__group">
-
-            <div class="form__input-group">
-              <span class="form__add-on">№</span>
-              <label for="pilyhrym" class="form__label">Имя: *</label>
-            </div>
-
-            <div class="form__input-group">
-              <span class="form__add-on form__add-on--for-input">1</span>
-              <input class="form__input" type="text" id="pilyhrym" name="name1" placeholder="Введите ваше имя" required>
-            </div>
-
-          </div>
-
-          <div class="form__group form__group--narrow">
-            <label for="sobriquet" class="form__label">Прозвище:</label>
-            <input class="form__input" type="text" id="sobriquet" name="sobriquet" placeholder="Ну как же без этого!" required>
-          </div>
-
-          <div class="form__group">
-
-            <div class="form__input-group">
-              <span class="form__add-on">№</span>
-              <label for="pilyhrym_2" class="form__label">Имя: *</label>
-            </div>
-
-            <div class="form__input-group">
-              <span class="form__add-on form__add-on--for-input">2</span>
-              <input class="form__input" type="text" id="pilyhrym_2" name="pilyhrym_2" placeholder="Введите ваше имя" required>
-            </div>
-
-          </div>
-
-          <div class="form__group form__group--narrow">
-            <label for="sobriquet_2" class="form__label">Прозвище:</label>
-            <input class="form__input" type="text" id="sobriquet_2" name="sobriquet_2" placeholder="Ну как же без этого!" required>
-          </div>
-
-      </fieldset>
+        </div>
+      </div>
     </div>
     <!-- fieldset number of travelers -->
 
     <!-- feldset achievements -->
-    <div class="form__fieldset-wrap">
-      <fieldset class="form__fieldset">
+    <div class="form__fieldset-achievements-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-mobile-4">
+            <fieldset class="form__fieldset">
 
-        <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+              <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
 
-          <div class="form__group form__group--lg-distance">
-            <input type="checkbox" class="form__checkbox" id="selfy" name="selfy" value="Зделать селфи с Акулой">
-            <label class="form__checkbox-label" for="selfy">Зделать селфи с Акулой</label>
+                <div class="form__group form__group--achievements">
+                  <input type="checkbox" class="form__checkbox" id="selfy" name="selfy" value="Зделать селфи с Акулой">
+                  <label class="form__checkbox-label" for="selfy">Cделал селфи с акулой</label>
+                </div>
+
+                <div class="form__group form__group--achievements">
+                  <input type="checkbox" class="form__checkbox" id="burned" name="burned" value="Обгорел на пляже">
+                  <label class="form__checkbox-label" for="burned">Обгорел на пляже</label>
+                </div>
+
+                <div class="form__group form__group--achievements">
+                  <input type="checkbox" class="form__checkbox" id="sow-chuck" name="sow-chuck" value="Видел Чака Норриса">
+                  <label class="form__checkbox-label" for="sow-chuck">Видел Чака Норриса</label>
+                </div>
+
+                <div class="form__group form__group--achievements">
+                  <input type="checkbox" class="form__checkbox" id="buy-souvenirs" name="buy-souvenirs" value="Накупил сувениры">
+                  <label class="form__checkbox-label" for="buy-souvenirs">Накупил сувениры</label>
+                </div>
+
+                <div class="form__group form__group--achievements">
+                  <input type="checkbox" class="form__checkbox" id="hold-tower" name="hold-tower" value="Удержал башню">
+                  <label class="form__checkbox-label" for="hold-tower">Удержал башню</label>
+                </div>
+
+                <div class="form__group form__group--achievements">
+                  <input type="checkbox" class="form__checkbox" id="crushed-hotel" name="crushed-hotel" value="Разгромил отель">
+                  <label class="form__checkbox-label" for="crushed-hotel">Разгромил отель</label>
+                </div>
+
+            </fieldset>
           </div>
-
-          <div class="form__group form__group--lg-distance">
-            <input type="checkbox" class="form__checkbox" id="burned" name="burned" value="Обгорел на пляже">
-            <label class="form__checkbox-label" for="burned">Обгорел на пляже</label>
-          </div>
-
-          <div class="form__group form__group--lg-distance">
-            <input type="checkbox" class="form__checkbox" id="sow-chuck" name="sow-chuck" value="Видел Чака Норриса">
-            <label class="form__checkbox-label" for="sow-chuck">Видел Чака Норриса</label>
-          </div>
-
-          <div class="form__group form__group--lg-distance">
-            <input type="checkbox" class="form__checkbox" id="buy-souvenirs" name="buy-souvenirs" value="Накупил сувениры">
-            <label class="form__checkbox-label" for="buy-souvenirs">Накупил сувениры</label>
-          </div>
-
-          <div class="form__group form__group--lg-distance">
-            <input type="checkbox" class="form__checkbox" id="hold-tower" name="hold-tower" value="Удержал башню">
-            <label class="form__checkbox-label" for="hold-tower">Удержал башню</label>
-          </div>
-
-          <div class="form__group form__group--lg-distance">
-            <input type="checkbox" class="form__checkbox" id="crushed-hotel" name="crushed-hotel" value="Разгромил отель">
-            <label class="form__checkbox-label" for="crushed-hotel">Разгромил отель</label>
-          </div>
-
-      </fieldset>
+        </div>
+      </div>
     </div>
     <!-- feldset achievements -->
 
     <!-- fieldset photos -->
-    <div class="form__fieldset-wrap">
-      <fieldset class="form-fieldset">
+    <div class="form__fieldset-photos-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-mobile-4">
+            <fieldset class="form-fieldset">
 
-        <legend class="form__legend">ВАШИ ФОТОГРАФИИ из поездки *</legend>
+              <legend class="form__legend">ВАШИ ФОТОГРАФИИ из поездки *</legend>
 
-        <div class="form__group">
-          <input class="form__file" style="display: none" type="file" name="photos" multiple>
-          <a href="#" class="btn btn--upload">Загрузить фото</a>
+              <div class="form__group">
+                <input class="form__file" style="display: none" type="file" name="photos" multiple>
+                <a href="#" class="btn btn--upload">Загрузить фото</a>
+              </div>
+
+              <div class="form__delimetr"></div>
+
+              <div class="photos">
+
+                <div class="photos__item">
+                  <a href="#" class="photos__delete"></a>
+                  <img class="photos__img" src="img/img-1.jpg" width="67" height="68" alt="New York">
+                  <div class="photos__name">img-1.jpg</div>
+                </div>
+
+                <div class="photos__item">
+                  <a href="#" class="photos__delete"></a>
+                  <img class="photos__img" src="img/img-2.jpg" width="68" height="68" alt="Los Angeles">
+                  <div class="photos__name">img-2.jpg</div>
+                </div>
+
+                <div class="photos__item">
+                  <a href="#" class="photos__delete"></a>
+                  <img class="photos__img" src="img/img-3.jpg" width="67" height="68" alt="Chicago">
+                  <div class="photos__name">img-3.jpg</div>
+                </div>
+
+                <div class="photos__item">
+                  <a href="#" class="photos__delete"></a>
+                  <img class="photos__img" src="img/img-4.jpg" width="67" height="67" alt="London">
+                  <div class="photos__name">img-4.jpg</div>
+                </div>
+
+                <div class="photos__item">
+                  <a href="#" class="photos__delete"></a>
+                  <img class="photos__img" src="img/img-5.jpg" width="68" height="67" alt="Paris">
+                  <div class="photos__name">img-5.jpg</div>
+                </div>
+
+                <div class="photos__item">
+                  <a href="#" class="photos__delete"></a>
+                  <img class="photos__img" src="img/img-6.jpg" width="67" height="67" alt="Helsinki">
+                  <div class="photos__name">img-6.jpg</div>
+                </div>
+
+                <div class="photos__item">
+                  <a href="#" class="photos__delete"></a>
+                  <img class="photos__img" src="img/img-7.jpg" width="68" height="67" alt="Budapest">
+                  <div class="photos__name">img-7.jpg</div>
+                </div>
+
+                <div class="photos__item">
+                  <a href="#" class="photos__delete"></a>
+                  <img class="photos__img" src="img/img-8.jpg" width="68" height="67" alt="Budapest">
+                  <div class="photos__name">img-7.jpg</div>
+                </div>
+
+              </div>
+            </fieldset>
+          </div>
         </div>
-
-        <div class="form__delimetr"></div>
-
-        <div class="photos">
-
-          <div class="photos__item">
-            <a href="#" class="photos__delete"></a>
-            <img class="photos__img" src="img/img-1.jpg" width="67" height="68" alt="New York">
-            <div class="photos__name">img-1.jpg</div>
-          </div>
-
-          <div class="photos__item">
-            <a href="#" class="photos__delete"></a>
-            <img class="photos__img" src="img/img-2.jpg" width="68" height="68" alt="Los Angeles">
-            <div class="photos__name">img-2.jpg</div>
-          </div>
-
-          <div class="photos__item">
-            <a href="#" class="photos__delete"></a>
-            <img class="photos__img" src="img/img-3.jpg" width="67" height="68" alt="Chicago">
-            <div class="photos__name">img-3.jpg</div>
-          </div>
-
-          <div class="photos__item">
-            <a href="#" class="photos__delete"></a>
-            <img class="photos__img" src="img/img-4.jpg" width="67" height="67" alt="London">
-            <div class="photos__name">img-4.jpg</div>
-          </div>
-
-          <div class="photos__item">
-            <a href="#" class="photos__delete"></a>
-            <img class="photos__img" src="img/img-5.jpg" width="68" height="67" alt="Paris">
-            <div class="photos__name">img-5.jpg</div>
-          </div>
-
-          <div class="photos__item">
-            <a href="#" class="photos__delete"></a>
-            <img class="photos__img" src="img/img-6.jpg" width="67" height="67" alt="Helsinki">
-            <div class="photos__name">img-6.jpg</div>
-          </div>
-
-          <div class="photos__item">
-            <a href="#" class="photos__delete"></a>
-            <img class="photos__img" src="img/img-7.jpg" width="68" height="67" alt="Budapest">
-            <div class="photos__name">img-7.jpg</div>
-          </div>
-
-          <div class="photos__item">
-            <a href="#" class="photos__delete"></a>
-            <img class="photos__img" src="img/img-8.jpg" width="68" height="67" alt="Budapest">
-            <div class="photos__name">img-7.jpg</div>
-          </div>
-
-        </div>
-      </fieldset>
+      </div>
     </div>
     <!-- fieldset photos -->
 
     <!-- fieldset submit -->
-    <div class="form__fieldset-wrap">
-      <fieldset class="form__fieldset">
+    <div class="form__fieldset-submit-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-mobile-4">
+            <fieldset class="form__fieldset">
 
-        <input class="btn btn--submit" type="submit" name="submit" value="Отправить форму">
+              <input class="btn btn--submit" type="submit" name="submit" value="Отправить форму">
 
-        <div class="form__required">
-          <span class="form__notice">*</span> — обязательные поля
+              <div class="form__required">
+                <span class="form__notice">*</span> — обязательные поля
+              </div>
+
+            </fieldset>
+          </div>
         </div>
-
-      </fieldset>
+      </div>
     </div>
     <!-- fieldset submit -->
 
@@ -311,25 +384,39 @@
 
 <!-- Page footer -->
 <footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-mobile-4 col-tablet-2 col-desktop-3">
 
-  <!-- sitename and logo -->
-  <a class="site-name site-name--with-logo" href="/">Pink</a>
-  <!-- sitename and logo -->
+        <!-- sitename and logo -->
+        <div class="site-name site-name--footer">
+          <a class="site-name__inner site-name__inner--footer" href="/">Pink</a>
+        </div>
+        <!-- sitename and logo -->
 
-  <!-- social links -->
-  <ul class="social">
-    <li class="social__item"><a href="#" class="social__link social__link--tw">Twitter</a></li>
-    <li class="social__item"><a href="#" class="social__link social__link--fb">Facebook</a></li>
-    <li class="social__item"><a href="#" class="social__link social__link--yt">YouTube</a></li>
-  </ul>
-  <!-- social links -->
+      </div>
+      <div class="col-mobile-4 col-tablet-4 col-desktop-6">
 
-  <!-- powered by -->
-  <div class="page-footer__made-by-wrap">
-    <a href="#" class="page-footer__made-by-link">Разработано</a>
+        <!-- social links -->
+        <ul class="social">
+          <li class="social__item"><a href="#" class="social__link social__link--tw">Twitter</a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--fb">Facebook</a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--yt">YouTube</a></li>
+        </ul>
+        <!-- social links -->
+
+      </div>
+      <div class="col-mobile-4 col-tablet-2 col-desktop-3">
+
+        <!-- powered by -->
+        <div class="page-footer__made-by-wrap">
+          <a href="#" class="page-footer__made-by-link">Разработано</a>
+        </div>
+        <!-- powered by -->
+
+      </div>
+    </div>
   </div>
-  <!-- powered by -->
-
 </footer>
 <!-- Page footer -->
 

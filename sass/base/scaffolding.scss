@@ -71,25 +71,48 @@ legend {
 
 }
 
-.mobile-hide {
-
-  display: none;
+.tablet-block-only {
 
   @media (min-width: $tablet) {
 
-    display: table-cell;
+    display: block;
+
+  }
+
+  @media (min-width: $desktop) {
+
+    display: inline;
 
   }
 
 }
 
-.tablet-show {
+.mobile-hide {
 
-  display: none;
+  @media (max-width: $tablet - 1) {
 
-  @media (min-width: $tablet) {
+    display: none !important;
 
-    display: block;
+  }
+
+}
+
+.tablet-hide {
+
+
+  @media (min-width: $tablet) and (max-width: $desktop - 1) {
+
+    display: none !important;
+
+  }
+
+}
+
+.desktop-hide {
+
+  @media (min-width: $desktop) {
+
+    display: none !important;
 
   }
 

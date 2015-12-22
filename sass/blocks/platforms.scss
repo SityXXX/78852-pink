@@ -12,7 +12,14 @@
   @media (min-width: $tablet) {
 
     margin-right: -17px;
-    margin-bottom: -6px;
+    margin-bottom: 23px;
+
+  }
+
+  @media (min-width: $desktop) {
+
+    margin-bottom: 39px;
+    margin-right: 0;
 
   }
 

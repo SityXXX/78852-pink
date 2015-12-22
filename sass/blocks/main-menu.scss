@@ -1,8 +1,14 @@
 .main-menu {
 
   position: absolute;
-  display: none;
   width: 100%;
+  z-index: 1;
+
+  @media (min-width: $desktop) {
+
+    position: static;
+
+  }
 
   &--opened {
 
@@ -14,6 +20,33 @@
 
     padding: 0;
     margin: 0;
+    list-style-type: none;
+
+    @media (min-width: $desktop) {
+
+      font-size: 0;
+      text-align: right;
+      margin-top: 10px;
+
+    }
+
+  }
+
+  &__item {
+
+    @media (min-width: $desktop) {
+
+      display: inline-block;
+
+      margin-right: 68px;
+
+      &:last-child {
+
+        margin-right: 0;
+
+      }
+
+    }
 
   }
 
@@ -34,6 +67,17 @@
     border-top: 1px solid #485461;
     border-bottom: 1px solid #030303;
     display: block;
+
+    @media (min-width: $desktop) {
+
+      display: inline;
+      background-color: transparent;
+      border: none;
+      font-weight: 400;
+      text-transform: none;
+      padding: 0;
+
+    }
 
   }
 

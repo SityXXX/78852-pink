@@ -2,25 +2,46 @@
 
   padding-bottom: 56px;
 
+  @media (min-width: $tablet) {
+
+    padding-top: 35px;
+    padding-bottom: 40px;
+
+  }
+
+  @media (min-width: $desktop) {
+
+    padding-top: 70px;
+    padding-bottom: 73px;
+
+  }
+
   &__made-by-wrap {
 
     text-align: center;
+
+    @media (min-width: $tablet) {
+
+      text-align: right;
+      margin-top: 12px;
+
+    }
 
   }
 
   &__made-by-link {
 
     display: inline-block;
-    font-size: 18px;
-    line-height: 1;
+    font-size: 14px;
+    line-height: 18px;
     color: $brand-color;
     text-decoration: none;
     padding-right: 42px;
     background-image: url('../img/htmlacademy.svg');
     background-repeat: no-repeat;
     background-position: 100% 50%;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 
   }
 

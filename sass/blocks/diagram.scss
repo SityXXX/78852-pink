@@ -11,6 +11,8 @@
   @media (min-width: $desktop) {
 
     background-color: $gray-bg-color;
+    padding-top: 13px;
+    padding-bottom: 66px;
 
   }
 
@@ -72,7 +74,19 @@
 
   &__text-wrap {
 
-    padding-top: 39px;
+    @media (min-width: $tablet) {
+
+      padding-top: 39px;
+      margin-left: -10px;
+    }
+
+    @media (min-width: $desktop) {
+
+      padding-top: 91px;
+      padding-left: 45px;
+      margin-left: 0;
+
+    }
 
   }
 
@@ -92,8 +106,22 @@
 
   &__text {
 
-    margin-top: 10px;
-    margin-bottom: 10px;
+    @media (min-width: $tablet) {
+
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+    }
+
+    @media (min-width: $desktop) {
+
+      margin-right: 20px;
+      margin-bottom: 32px;
+      margin-top: 20px;
+
+    }
+
+
 
   }
 

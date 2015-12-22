@@ -1,7 +1,7 @@
 .slider-navigation {
 
   position: absolute;
-  bottom: 30px;
+  bottom: 31px;
   left: 0;
   width: 100%;
   text-align: center;
@@ -11,6 +11,12 @@
   font-size: 0;
 
   @media (min-width: $tablet) {
+
+    bottom: 7px;
+
+  }
+
+  @media (min-width: $desktop) {
 
     display: none;
 

@@ -6,12 +6,9 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin,cyrillic' rel='stylesheet'
         type='text/css'>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/vendors/owl.carousel.css">
-  <script src="js/vendors/jquery-2.1.4.js"></script>
   <title>HTML Academy: Пинк</title>
 </head>
 <body>
-
 
 <!-- Page header -->
 <header class="page-header">
@@ -25,7 +22,7 @@
         <div class="container">
           <div class="row">
 
-            <div class="col-mobile-2">
+            <div class="col-mobile-2 col-tablet-3 col-desktop-3">
               <!-- sitename -->
               <div class="site-name">
                 <a class="site-name__inner site-name__inner--header" href="/">Pink</a>
@@ -33,33 +30,31 @@
               <!-- sitename -->
             </div>
 
-            <div class="col-mobile-offset-1 col-mobile-1">
+            <div class="col-mobile-offset-1 col-mobile-1 col-tablet-offset-4 col-tablet-1 col-desktop-offset-2 col-desktop-7">
 
               <!-- open menu btn -->
-              <a href="#" class="nav-toogle" id="nav-toogle">Открыть</a>
+              <a href="#" class="nav-toogle desktop-hide" id="nav-toogle">Открыть</a>
               <!-- open menu btn -->
-
-              <!-- menu -->
-              <nav class="main-menu" id="main-menu">
-                <ul class="main-menu__list">
-                  <li class="main-menu__item"><a href="#" class="main-menu__link">Информация</a></li>
-                  <li class="main-menu__item"><a href="#" class="main-menu__link">Блог</a></li>
-                  <li class="main-menu__item"><a href="#" class="main-menu__link">Отзывы</a></li>
-                  <li class="main-menu__item"><a href="#" class="main-menu__link">Конкурс</a></li>
-                </ul>
-              </nav>
-              <!-- menu -->
 
             </div>
+            <!-- menu -->
+            <nav class="main-menu" id="main-menu">
+              <ul class="main-menu__list mobile-hide tablet-hide">
+                <li class="main-menu__item"><a href="#" class="main-menu__link">Информация</a></li>
+                <li class="main-menu__item"><a href="#" class="main-menu__link">Блог</a></li>
+                <li class="main-menu__item"><a href="#" class="main-menu__link">Отзывы</a></li>
+                <li class="main-menu__item"><a href="#" class="main-menu__link">Конкурс</a></li>
+              </ul>
+            </nav>
+            <!-- menu -->
           </div>
         </div>
       </div>
-
     </div>
     <!-- nav-bar -->
 
     <!-- site heading -->
-    <div class="page-header__heading-wrap">
+    <div class="page-header__heading-wrap page-header__heading-wrap--imaged">
       <div class="container">
         <div class="row">
           <div class="col-mobile-4 col-tablet-4">
@@ -156,19 +151,19 @@
 
 
   <!-- round diagram -->
-  <div class="diagram tablet-show">
+  <div class="diagram mobile-hide">
     <div class="container">
       <div class="row">
-        <div class="col-tablet-4 col-desktop-5">
+        <div class="col-tablet-4 col-desktop-4">
           <div class="diagram__timer-wrap">
             <div class="diagram__timer-inner">
               <div class="diagram__timer-time">24</div>
             </div>
           </div>
         </div>
-        <article class="col-tablet-4 col-desktop-7">
+        <article class="col-tablet-4 col-desktop-8">
           <div class="diagram__text-wrap">
-            <h3 class="diagram__heading">Эффект <span class="tablet-block">на 24 часа!</span></h3>
+            <h3 class="diagram__heading">Эффект <span class="tablet-block-only">на 24 часа!</span></h3>
             <p class="diagram__text">
               Британские ученые провели исследования
               и доказали, что положительный эффект
@@ -187,40 +182,39 @@
   <div class="review">
     <div class="container">
       <div class="row">
-        <div class="col-mobile-4 col-tablet-8 col-desktor-12">
-          <div class="owl-carousel">
-            <!-- review -->
-            <div class="review__item">
-              <div class="review__author">Николай Петров</div>
-              <div class="review__author-details tablet-show">25 лет, водитель трамвая</div>
-              <p class="review__text">
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-                привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
-                фотографии!»
-              </p>
-            </div>
-            <div class="review__item">
-              <div class="review__author">Николай Петров</div>
-              <div class="review__author-details tablet-show">25 лет, водитель трамвая</div>
-              <p class="review__text">
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-                привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
-                фотографии!»
-              </p>
-            </div>
-            <div class="review__item">
-              <div class="review__author">Николай Петров</div>
-              <div class="review__author-details tablet-show">25 лет, водитель трамвая</div>
-              <p class="review__text">
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-                привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
-                фотографии!»
-              </p>
-            </div>
-            <!-- review -->
+        <div class="col-mobile-4 col-tablet-8 col-desktop-offset-1 col-desktop-10">
+          <!-- review -->
+          <div class="review__item">
+            <div class="review__author">Николай Петров</div>
+            <div class="review__author-details mobile-hide">25 лет, водитель трамвая</div>
+            <p class="review__text">
+              <span class="desktop-hide">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+              фотографии!<span class="desktop-hide">»</span>
+            </p>
           </div>
+          <!-- review -->
         </div>
       </div>
+
+      <div class="slider-navigation">
+        <div class="row">
+          <!-- slider navigation -->
+          <ul class="col-mobile-4 col-tablet-8 col-desktop-12">
+            <li class="slider-navigation__item">
+              <a href="#" class="slider-navigation__link slider-navigation__link--active"></a>
+            </li>
+            <li class="slider-navigation__item">
+              <a href="#" class="slider-navigation__link"></a>
+            </li>
+            <li class="slider-navigation__item">
+              <a href="#" class="slider-navigation__link"></a>
+            </li>
+          </ul>
+          <!--slider navigation -->
+        </div>
+      </div>
+
       <!-- reviews -->
     </div>
   </div>
@@ -230,10 +224,10 @@
   <div class="price">
     <div class="container">
       <div class="row">
-        <div class="col-mobile-4 col-tablet-8 col-desktop-12 owl-carousel">
+        <div class="col-mobile-4 col-tablet-8 col-desktop-12">
 
           <!-- table-1 -->
-          <table class="price__table price__table--with-prop-list">
+          <table class="price__table price__table--with-prop-list mobile-hide">
             <thead class="price__table-head">
             <tr class="price__table-head-row">
               <td class="price__table-head-col invisible mobile-hide"></td>
@@ -301,7 +295,7 @@
           <!-- table-2 -->
 
           <!-- table-3 -->
-          <table class="price__table">
+          <table class="price__table mobile-hide">
             <thead class="price__table-head">
             <tr class="price__table-head-row">
               <td class="price__table-head-col">Анлим
@@ -331,17 +325,27 @@
             </tbody>
           </table>
            <!-- table-3 -->
-
-          <!-- slider navigation
-          <ul class="slider-navigation">
-            <li class="slider-navigation__item"><a href="#"
-                                                   class="slider-navigation__link slider-navigation__link--active"></a></li>
-            <li class="slider-navigation__item"><a href="#" class="slider-navigation__link"></a></li>
-            <li class="slider-navigation__item"><a href="#" class="slider-navigation__link"></a></li>
-          </ul>
-          slider navigation -->
         </div>
       </div>
+
+      <!-- slider navigation -->
+      <div class="slider-navigation tablet-hide">
+        <div class="row">
+          <ul class="col-mobile-4 col-tablet-8 col-desktop-12">
+            <li class="slider-navigation__item">
+              <a href="#" class="slider-navigation__link"></a>
+            </li>
+            <li class="slider-navigation__item">
+              <a href="#" class="slider-navigation__link slider-navigation__link--active"></a>
+            </li>
+            <li class="slider-navigation__item">
+              <a href="#" class="slider-navigation__link"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--slider navigation -->
+
     </div>
 
   </div>
@@ -350,18 +354,20 @@
   <div class="contacts">
     <div class="container">
       <div class="row">
-        <div class="col-mobile-4 col-tablet-8">
+        <div class="col-mobile-4 col-tablet-8 col-desktop-12">
           <div class="h1"><span class="block">Остались вопросы?</span><span class="block">Свяжитесь с нами!</span></div>
         </div>
-        <div class="col-mobile-4 col-tablet-4 contacts__item">
+      </div>
+      <div class="row contacts__items">
+        <div class="col-mobile-4 col-tablet-4 col-desktop-4 contacts__item">
           <div class="contacts__heading">Звоните:</div>
           <p class="contacts__text">+7 (812) 555-66-66</p>
         </div>
-        <div class="col-mobile-4 col-tablet-4 contacts__item">
+        <div class="col-mobile-4 col-tablet-4 col-desktop-4 contacts__item contacts__item--last">
           <div class="contacts__heading">Пишите:</div>
           <p class="contacts__text">mail@htmlacademy.ru</p>
         </div>
-        <div class="col-mobile-4 col-tablet-offset-2 col-tablet-4 contacts__item">
+        <div class="col-mobile-4 col-tablet-offset-2 col-tablet-4 col-desktop-4 contacts__item">
           <div class="contacts__heading">Приезжайте в гости:</div>
           <p class="contacts__text">ул. Большая <span class="block">Конюшенная, 19/8</span></p>
         </div>
@@ -378,10 +384,11 @@
 <!-- Main content -->
 
 
-<footer class="page-footer tablet-show">
+<!-- Page footer -->
+<footer class="page-footer mobile-hide">
   <div class="container">
     <div class="row">
-      <div class="col-mobile-4 col-tablet-3">
+      <div class="col-mobile-4 col-tablet-2 col-desktop-3">
 
         <!-- sitename and logo -->
         <div class="site-name site-name--footer">
@@ -390,7 +397,7 @@
         <!-- sitename and logo -->
 
       </div>
-      <div class="col-mobile-4 col-tablet-3">
+      <div class="col-mobile-4 col-tablet-4 col-desktop-6">
 
         <!-- social links -->
         <ul class="social">
@@ -401,7 +408,7 @@
         <!-- social links -->
 
       </div>
-      <div class="col-mobile-4 col-tablet-2">
+      <div class="col-mobile-4 col-tablet-2 col-desktop-3">
 
         <!-- powered by -->
         <div class="page-footer__made-by-wrap">
@@ -442,8 +449,5 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuE7UQVssKkcUvQrUq7oyjuVTAU8m3szY&callback=initMap">
 </script>
 <!-- google map -->
-
-<script src="js/vendors/owl.carousel.js"></script>
-<script src="js/script.js"></script>
 </body>
 </html>

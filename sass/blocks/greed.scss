@@ -12,8 +12,8 @@
 
   @media (min-width: $desktop) {
 
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 10.83333%;
+    padding-right: 10.83333%;
 
   }
 
@@ -70,7 +70,7 @@
 
   .col-tablet-#{$i} {
 
-    @media (min-width: $tablet) {
+    @media (min-width: $tablet) and (max-width: $desktop - 1) {
 
       width: ($i / $columns-tablet) * 100%;
 
@@ -80,7 +80,7 @@
 
   .col-tablet-offset-#{$i} {
 
-    @media (min-width: $tablet) {
+    @media (min-width: $tablet) and (max-width: $desktop - 1) {
 
       margin-left: ($i / $columns-tablet) * 100%;
 
@@ -102,13 +102,12 @@
 
     }
 
-    @media (min-width: $desktop) {
+  }
+  @media (min-width: $desktop) {
 
-      .col-desktop-offset-#{$i} {
+    .col-desktop-offset-#{$i} {
 
-        margin-left: ($i / $columns-desktop) * 100%;
-
-      }
+      margin-left: ($i / $columns-desktop) * 100%;
 
     }
 

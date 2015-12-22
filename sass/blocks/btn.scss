@@ -11,6 +11,12 @@
   border: none;
   cursor: pointer;
 
+  @media (min-width: $desktop) {
+
+    font-size: 21px;
+
+  }
+
   &--upload {
 
     border: 2px solid #e5e5e5;
@@ -33,6 +39,12 @@
     @media (min-width: $tablet) {
 
       margin-bottom: 47px;
+
+    }
+
+    @media (min-width: $desktop) {
+
+      margin-bottom: 67px;
 
     }
 

@@ -8,17 +8,23 @@
     padding-top: 21px;
     padding-bottom: 21px;
 
-    &--opened {
-
-      background-color: $brand-color;
-      border-bottom: 1px solid #030303;
-
-    }
-
     @media (min-width: $tablet) {
 
       padding-top: 27px;
       padding-bottom: 43px;
+
+    }
+
+    @media (min-width: $desktop) {
+
+      padding-bottom: 35px;
+
+    }
+
+    &--opened {
+
+      background-color: $brand-color;
+      border-bottom: 1px solid #030303;
 
     }
 
